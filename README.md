@@ -6,6 +6,7 @@ ada-2023-project-rollthedatadice created by GitHub Classroom
 - [Research Questions](#research-questions)
 - [Methods](#methods)
 - [Initial Analysis](#initial-analysis)
+- [Schedule](#schedule)
 
 ## Structure of this repository
 ```
@@ -19,7 +20,7 @@ ada-2023-project-rollthedatadice created by GitHub Classroom
 ## Research Questions
 ## Methods
 ## Initial analysis
-
+## Schedule
 
 
 
