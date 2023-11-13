@@ -1,5 +1,29 @@
 # ada-2023-project-rollthedatadice
 ada-2023-project-rollthedatadice created by GitHub Classroom
+## Table of Contents
+- [Structure of this repository](#structure-of-this-repository)
+- [Abstract](#abstract)
+- [Research Questions](#research-questions)
+- [Methods](#methods)
+- [Initial Analysis](#initial-analysis)
+
+## Structure of this repository
+```
++---data
+|   \---corenlp_plot_summaries
++---generated
++---src
+\---temp
+```
+## Abstract
+## Research Questions
+## Methods
+## Initial analysis
+
+
+
+
+
 
 
 Analyzing tropes from plot summaries.

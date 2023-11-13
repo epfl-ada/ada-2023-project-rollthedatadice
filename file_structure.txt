@@ -1,0 +1,8 @@
+Folder PATH listing for volume New Volume
+Volume serial number is B60B-C79A
+D:.
++---data
+|   \---corenlp_plot_summaries
++---generated
++---src
+\---temp
