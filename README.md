@@ -1,5 +1,5 @@
-# ada-2023-project-rollthedatadice
-ada-2023-project-rollthedatadice created by GitHub Classroom
+# Personas from the films
+Let's RollTheDataDice!
 ## Table of Contents
 - [Structure of this repository](#structure-of-this-repository)
 - [Abstract](#abstract)
@@ -7,21 +7,68 @@ ada-2023-project-rollthedatadice created by GitHub Classroom
 - [Methods](#methods)
 - [Initial Analysis](#initial-analysis)
 - [Schedule](#schedule)
+- [Team Collaboration](#team-collaboration)
 
 ## Structure of this repository
 ```
-+---data
-|   \---corenlp_plot_summaries
-+---generated
-+---src
-\---temp
++---data                               # Used to put the raw data
+|   \---corenlp_plot_summaries         # Tagged data from Stanford CoreNLP-processed summaries
+|   character.metadata.tsv
+|   movie.metadata.tsv
+|   name.clusters.txt
+|   plot_summaries.txt
+
++---generated                          # Store the manipulated data
+|   \images
+|   \tropes                            # Crawled data from tvtropes
+
++---src                                # All the codes
+|   movie_metadata_eda.ipynb           # Initial analysis on the movie_metadata.tsv
+
+\---temp                               # Temporary files
 ```
 ## Abstract
-## Research Questions
-## Methods
-## Initial analysis
-## Schedule
+Assuming a great majority of the screenwriting (especially for those feature films) is essentially generated with basic narrative elements, their variations, and combinations (we can refer to Robert McKee’s Story, which is a classic guidebook for Hollywood playwrights), we have good reasons to believe it is possible and also interesting to decompose the films through analyzing the plot summaries, to identify those “tropes” and further to investigate the cultural implications behind.
 
+## Research Questions
+1. **Tropes over time**: Are some character tropes more or less popular through years?
+2. **Genre tropes**: Which tropes are the most popular in each genre?
+3. **Similar tropes:** Which curious associations between tropes (through the adjectives) can we find?
+4. **Tropes and Box Office Success:** Which character tropes are associated with higher revenue of films?
+5. **Cross-Genre Tropes:** Are there character tropes that are cross-genre?
+6. **Combinations of tropes:** Are there specific combinations of tropes that tend to work well together or create interesting dynamics on screen?
+
+## Methods
+1. **Semantic Tagging**
+This part has been done by [Stanford CoreNLP-processed summaries](https://www.cs.cmu.edu/~ark/personas/data/corenlp_plot_summaries.tar). The tagged data is stored in XML format.
+2. **Clustering**
+Use unsupervised learning methods like LDA to get the clusters of the personas based on the descriptive words we get about the person from the parsed data.
+3. **Network Analysis**
+To be filled
+
+
+## Initial analysis
+See `movie_metadata_eda.ipynb` in the `src` folder.
+
+## Schedule
+| Time         | Task                   | Status  |
+|--------------|----------------------- |---------|
+| 17, Nov      | EDA, Proposal writing  |✅       |
+| 24, Nov      | Parse the XML files    |         |
+| 31, Nov      | Persona clustering     |         |
+| 7, Dec       | Network analysis       |         |
+| 14, Dec      | Build the network      |         |
+| 21, Dec      | Finalize the story     |         |
+
+## Team collaboration
+
+| Member       | Task                  |
+|--------------|-----------------------|
+| Mehdi        | Buil the network      |
+| Yanzi        | Crawl tropes          |
+| Jiaming      | Metadata analysis     |
+| David        | Tropes extraction     |
+| Ke           | Metadata analysis     |
 
 
 
@@ -29,7 +76,6 @@ ada-2023-project-rollthedatadice created by GitHub Classroom
 
 Analyzing tropes from plot summaries.
 
-Context: Assuming a great majority of the screenwriting (especially for those feature films) is essentially generated with basic narrative elements, their variations, and combinations (we can refer to Robert McKee’s Story, which is a classic guidebook for Hollywood playwrights), we have good reasons to believe it is possible and also interesting to decompose the films through analyzing the plot summaries, to identify those “tropes” and further to investigate the cultural implications behind.
 
 For our project, we mainly focus on the “tropes” in these two categories: 
 
