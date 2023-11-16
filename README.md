@@ -4,9 +4,10 @@ Let's RollTheDataDice!
 - [Structure of this repository](#structure-of-this-repository)
 - [Abstract](#abstract)
 - [Research Questions](#research-questions)
+- [Additional dataset](#additional-datasets)
 - [Methods](#methods)
 - [Initial Analysis](#initial-analysis)
-- [Schedule](#schedule)
+- [Schedule](#timeline)
 - [Team Collaboration](#team-collaboration)
 
 ## Structure of this repository
@@ -31,26 +32,59 @@ Let's RollTheDataDice!
 Assuming a great majority of the screenwriting (especially for those feature films) is essentially generated with basic narrative elements, their variations, and combinations (we can refer to Robert McKee’s Story, which is a classic guidebook for Hollywood playwrights), we have good reasons to believe it is possible and also interesting to decompose the films through analyzing the plot summaries, to identify those “tropes” and further to investigate the cultural implications behind.
 
 ## Research Questions
+### Tropes
 1. **Tropes over time**: Are some character tropes more or less popular through years?
 2. **Genre tropes**: Which tropes are the most popular in each genre?
 3. **Similar tropes:** Which curious associations between tropes (through the adjectives) can we find?
 4. **Tropes and Box Office Success:** Which character tropes are associated with higher revenue of films?
 5. **Cross-Genre Tropes:** Are there character tropes that are cross-genre?
 6. **Combinations of tropes:** Are there specific combinations of tropes that tend to work well together or create interesting dynamics on screen?
+### Network
+
+## Additional datasets
+We plan to extend our dataset by scraping the dataset of tropes associated to the characters from TVTropes. Here there is the character sheets for the [Live action](https://tvtropes.org/pmwiki/pmwiki.php/CharacterSheets/LiveActionFilms) films and the [Animation](https://tvtropes.org/pmwiki/pmwiki.php/CharacterSheets/AnimatedFilms) films. In these pages there are clear character-trope associations for 1000 films.
+
 
 ## Methods
-1. **Semantic Tagging**
+
+Our idea involves many steps.
+1. Extraction of character tropes for 1000 films from the website TVTropes
+2. Execute the pipeline from the paper of the "Learning Latent Personas of Film Characters" paper
+3. (Optional) Inference of character tropes for the rest of the films in the dataset through a classification model
+4. Creation of character dynamics network for each film
+5. Comparison and clustering of these networks
+6. Final analysis on tropes and networks
+
+#### 1.(Optional) Extraction of character tropes
+Our first task would be scrape the website of the Character tropes, as described in the previous "Additional datasets" section. 
+We would use libraries such as BeautifulSoup and Selenium.
+
+#### 2. Execute the pipeline from the paper of the Character Personas
+Our goal for this step is to obtain the adjectives/nouns list associated with each character. To do this, we plan to run the entire pipeline of [this repository](https://github.com/dbamman/ACL2013_Personas/tree/master). 
+We are aware it's heavy computationally, we plan to make it by next week.
+#### 3. (Optional) Inference of character tropes for the rest of the films in the dataset through a classification model
+
+To address the limitation of tropes being available for only 1000 films we plan to design a classification model. 
+
+The training data includes characters associated with tropes, which are then joined with "persona" classes. The objective is to predict character tropes for unlabeled data using the list of words associated with persona classes as features, treating it as a text classification problem. 
+
+Techniques such as TF-IDF for numerical representation of adjectives and a language model like BERT are planned to be used. Potential challenges include class imbalance, especially with certain tropes, and concerns about the model's performance. 
+If these challenges prove insurmountable, we may focus solely on the subset of 1000 films in the dataset.
+
+#### 4. Creation of character dynamics network for each film
+
+4.1. *Semantic Tagging*
 This part has been done by [Stanford CoreNLP-processed summaries](https://www.cs.cmu.edu/~ark/personas/data/corenlp_plot_summaries.tar). The tagged data is stored in XML format.
-2. **Clustering**
-Use unsupervised learning methods like LDA to get the clusters of the personas based on the descriptive words we get about the person from the parsed data.
-3. **Network Analysis**
-To be filled
+
+#### 5. Comparison and (optional) clustering of these networks
+#### 6. Final analysis on tropes and networks
+
 
 
 ## Initial analysis
 See `movie_metadata_eda.ipynb` in the `src` folder.
 
-## Schedule
+## Timeline
 | Time         | Task                   | Status  |
 |--------------|----------------------- |---------|
 | 17, Nov      | EDA, Proposal writing  |✅       |
@@ -60,19 +94,19 @@ See `movie_metadata_eda.ipynb` in the `src` folder.
 | 14, Dec      | Build the network      |         |
 | 21, Dec      | Finalize the story     |         |
 
-## Team collaboration
+## Team organization
 
-| Member       | Task                  |
+| Member       | Tasks                 |
 |--------------|-----------------------|
-| Mehdi        | Buil the network      |
+| Mehdi        | Build the network      |
 | Yanzi        | Crawl tropes          |
 | Jiaming      | Metadata analysis     |
-| David        | Tropes extraction     |
+| David        | Final data analysis   |
 | Ke           | Metadata analysis     |
 
 
 
-
+## Old stuff
 
 Analyzing tropes from plot summaries.
 
