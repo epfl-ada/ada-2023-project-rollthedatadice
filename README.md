@@ -94,9 +94,9 @@ This part has been done by [Stanford CoreNLP-processed summaries](https://www.cs
 
 
 ## Initial analysis
-We did initial EDA for our movie dataset to understand in which decades the film were made, the genre distribution, country of origin and movie language.
+We did initial EDA for our movie metadata and character metadata to understand in which decades the films were made, the genre distribution, country of origin, movie language, character age, height, and so on.
 
-Because of the strong bias towards american films in the dataset we discarded our idea about movies and cultures.
+Because of the strong bias towards American films in the dataset, we discarded our idea about movies and cultures.
 See `movie_metadata_eda.ipynb` in the `src` folder for more details.
 
 ## Timeline
