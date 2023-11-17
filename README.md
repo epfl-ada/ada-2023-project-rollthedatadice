@@ -33,17 +33,23 @@ Our project aims to address the critical gap in film analysis by quantitatively 
 
 
 ## Research Questions
-### Tropes
-1. **Tropes over time**: Are some character tropes more or less popular through years?
-2. **Genre tropes**: Which tropes are the most popular in each genre?
-3. **Similar tropes:** Which curious associations between tropes (through the adjectives) can we find?
-4. **Tropes and Box Office Success:** Which character tropes are associated with higher revenue of films?
-5. **Cross-Genre Tropes:** Are there character tropes that are cross-genre?
-6. **Combinations of tropes:** Are there specific combinations of tropes that tend to work well together or create interesting dynamics on screen?
-### Network
-
-## Additional datasets
-We plan to extend our dataset by scraping the dataset of tropes associated to the characters from TVTropes. Here there is the character sheets for the [Live action](https://tvtropes.org/pmwiki/pmwiki.php/CharacterSheets/LiveActionFilms) films and the [Animation](https://tvtropes.org/pmwiki/pmwiki.php/CharacterSheets/AnimatedFilms) films. In these pages there are clear character-trope associations for 1000 films.
+For our analytical framework, we first extract three main factors from movie metadata that might influence the character dynamics:  temporal, geographical, and genre-related ones.
+### Main characters
+1. What are the most common behavioral and personality patterns exhibited by main characters?
+2. More specifically, how do these patterns evolve over time and differ across regions and genres?
+### Side characters
+Similar questions also apply to the side characters:
+3. What are the most common behavioral and personality patterns exhibited by side characters?
+4. Again, how do these patterns evolve over time and differ across regions and genres?
+### Character interactions
+5. What are the common interaction patterns and relationships that unfold among main characters?
+6. How do main characters typically engage with side characters, and what roles do side characters play in influencing the storyline?
+7. Are there distinctive patterns in the portrayal of relationships between characters in movies of different times, from different regions?
+### Gender dynamics
+8. What are the most prevalent interaction patterns between characters of the same gender, and how do these patterns vary across genres?
+9. Perhaps it could be extended to factors like age, ethnicity, and so on.
+### Graph comparison
+10. 
 
 
 ## Methods
