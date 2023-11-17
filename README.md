@@ -34,21 +34,25 @@ Our project aims to address the critical gap in film analysis by quantitatively 
 
 ## Research Questions
 For our analytical framework, we first extract three main factors from movie metadata that might influence the character dynamics:  temporal, geographical, and genre-related ones.
-### Main characters
+### Single character
+To start with, we'd like to probe into single characters.
+#### Main characters
 1. What are the most common behavioral and personality patterns exhibited by main characters? Do they reflect anything about the public psychology?
 2. More specifically, how do these patterns evolve over time and differ across regions and genres? Are there any cultural or social implications behind?
-### Side characters
+#### Side characters
 3. Similarly, what are the most common behavioral and personality patterns exhibited by side characters?
 4. Again, how do these patterns evolve over time and differ across regions and genres?
-### Character interactions
+### Network graph
+Then, we get the semantic character network graph from each movie, in which every node represents the characters and the edges represent the events (verbs) linking the characters.
+#### Character interactions
 5. What are the common interaction patterns and relationships that unfold among main characters?
 6. How do main characters typically engage with side characters, and what roles do side characters play in influencing the storyline?
 7. Are there distinctive patterns in the portrayal of relationships between characters in movies of different times, and from different regions?
-### Gender dynamics
+#### Gender dynamics
 8. What are the most prevalent interaction patterns between characters of the same gender, and how do these patterns vary across genres? Could we uncover any clues about gender politics embodied in the movies?
 9. Perhaps it could be extended to factors like age, ethnicity, and so on.
-### Graph comparison
-10. 
+#### Graph comparison
+10. Can we classify these network graphs based on their geometrical and semantic features? And what can we learn from the classification results?
 
 
 ## Methods
