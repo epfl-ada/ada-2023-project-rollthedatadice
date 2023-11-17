@@ -29,7 +29,8 @@ Let's RollTheDataDice!
 \---temp                               # Temporary files
 ```
 ## Abstract
-Assuming a great majority of the screenwriting (especially for those feature films) is essentially generated with basic narrative elements, their variations, and combinations (we can refer to Robert McKee’s Story, which is a classic guidebook for Hollywood playwrights), we have good reasons to believe it is possible and also interesting to decompose the films through analyzing the plot summaries, to identify those “tropes” and further to investigate the cultural implications behind.
+Our project aims to address the critical gap in film analysis by quantitatively investigating character dynamics based on the dataset. We focus on identifying prevalent patterns among main and side characters, dissecting gender dynamics, and possibly exploring psychoanalytic dimensions. Further, we endeavor to reveal recurring themes, archetypes, and behavioral patterns that construct character networks to discern genre-specific tropes. By unraveling the intricate relationships between characters, we hope to provide insights to better understand the craft of storytelling in the dynamic landscape of cinema. 
+
 
 ## Research Questions
 ### Tropes
