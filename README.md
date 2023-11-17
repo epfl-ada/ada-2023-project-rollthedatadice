@@ -23,7 +23,8 @@ Let's RollTheDataDice!
 |   \tropes                            # Crawled data from tvtropes
 
 +---src                                # All the codes
-|   movie_metadata_eda.ipynb           # Initial analysis on the movie_metadata.tsv
+|   milestone2.ipynb                   # Exploratory analysis
+|   helper.py                          # Helper functions
 
 \---temp                               # Temporary files
 ```
@@ -108,10 +109,9 @@ For our final analysis we will perform many visualizations such as bar plots, hi
 
 
 ## Initial analysis
-We did initial EDA for our movie metadata and character metadata to understand in which decades the films were made, the genre distribution, country of origin, movie language, character age, height, and so on.
+We did initial EDA for our movie metadata and character metadata to understand in which decades the films were made, the genre distribution, country of origin, movie language, character age, height, and so on. The explorary analysis helps us understand the dataset and provides ideas about future analysis aspects.
 
-Because of the strong bias towards American films in the dataset, we discarded our idea about movies and cultures.
-See `movie_metadata_eda.ipynb` in the `src` folder for more details.
+See [milestone2.ipynb](./src/milestone2.ipynb) for more details.
 
 ## Timeline
 | Time         | Task                   | Status  |
