@@ -42,7 +42,7 @@ To start with, we'd like to probe into single characters.
 3. Similarly, what are the most common behavioral and personality patterns exhibited by side characters?
 4. Again, how do these patterns evolve over time and differ across regions and genres?
 ### Character network
-Then, we get the semantic character network graph from each movie, in which every node represents the characters and the edges represent the events (verbs) linking the characters.
+Then, we get the semantic character network graph from each movie, in which every node represents a character and the edges represent the events (verbs) linking the characters.
 - **Character interactions**
 5. What are the common interaction patterns and relationships that unfold among main characters?
 6. How do main characters typically engage with side characters, and what roles do side characters play in influencing the storyline?
