@@ -5,7 +5,7 @@ Let's RollTheDataDice!
 - [Abstract](#abstract)
 - [Research Questions](#research-questions)
 - [Additional dataset](#additional-datasets)
-- [Methods](#methods)
+- [Methods](#methodology)
 - [Initial Analysis](#initial-analysis)
 - [Schedule](#timeline)
 - [Team Collaboration](#team-collaboration)
@@ -57,38 +57,39 @@ Then, we get the semantic character network graph from each movie, in which ever
 12. Can we classify these network graphs based on their geometrical and semantic features? And what can we learn from the classification results? Would they fit into different genres, maybe? Or different narrative structures?
 
 
-## Methods
+## Methodology
 
 Our idea involves many steps.
-1. Extraction of character tropes for 1000 films from the website TVTropes
-2. Execute the pipeline from the paper of the "Learning Latent Personas of Film Characters" paper
-3. (Optional) Inference of character tropes for the rest of the films in the dataset through a classification model
-4. Creation of character dynamics network for each film
-5. Comparison and clustering of these networks
-6. Final analysis on tropes and networks
+1. Implementation of the pipeline outlined in the "Learning Latent Personas of Film Characters" paper
+2. Qualitative labelling of the personas
+3. Generation of character dynamics networks for each film
+4. Extraction of character adjectives
+5. Identification of main and side characters
+6. Semantic character network comparison
+7. Final analysis on characters and networks
 
-#### 1.(Optional) Extraction of character tropes
-Our first task would be scrape the website of the Character tropes, as described in the previous "Additional datasets" section. 
-We would use libraries such as BeautifulSoup and Selenium.
-
-#### 2. Execute the pipeline from the paper of the Character Personas
-Our goal for this step is to obtain the adjectives/nouns list associated with each character. To do this, we plan to run the entire pipeline of [this repository](https://github.com/dbamman/ACL2013_Personas/tree/master). 
+#### 1. Implementation of the pipeline outlined in the "Learning Latent Personas of Film Characters" paper
+Our goal for this step is to obtain the persona and the corresponding distributions of topics associated with each character. To do this, we plan to run the entire pipeline of [this repository](https://github.com/dbamman/ACL2013_Personas/tree/master). 
 We are aware it's heavy computationally, we plan to make it by next week.
-#### 3. (Optional) Inference of character tropes for the rest of the films in the dataset through a classification model
 
-To address the limitation of tropes being available for only 1000 films we plan to design a classification model. 
+#### 2. Qualitative labelling of the personas
+When we get our list of classes from the previous step, we will qualitatively label these classes. We will take in consideration which assumptions we take in this step for the further analyses.
 
-The training data includes characters associated with tropes, which are then joined with "persona" classes. The objective is to predict character tropes for unlabeled data using the list of words associated with persona classes as features, treating it as a text classification problem. 
+#### 3. Generation of character dynamics networks for each film
+In this phase we have to perform different tasks:
+1. We start by identifying the characthers in our plot by using Spacy library and process them for entity disambiguation (e.g. name & surname).
+2. (Optional) For the pronouns we can use NER techniques to infer to which character the pronoun is referring to.
+3. Extract the edges between our characters. This could involve techniques ranging from co-occurrence in one sentence or a more strict pattern as "character-verb-character". We already started to test different methods.
 
-Techniques such as TF-IDF for numerical representation of adjectives and a language model like BERT are planned to be used. Potential challenges include class imbalance, especially with certain tropes, and concerns about the model's performance. 
-If these challenges prove insurmountable, we may focus solely on the subset of 1000 films in the dataset.
+#### 4. Extraction of character adjectives
+To find adjectives, we use the Spacy library and perform text processing on the syntactic structure provided by the dependency tree to find words that are labeled as amod (adjectival modifier), acomp (adjectival complement) or others that are connected to the character.
 
-#### 4. Creation of character dynamics network for each film
+#### 5. Identification of main and side characters
+To define main and side characters we could look at two things:
+1. Frequency of the characters
+2. Node-Related Measures such as degree, PageRank, Betweennesscentrality.
 
-4.1. *Semantic Tagging*
-This part has been done by [Stanford CoreNLP-processed summaries](https://www.cs.cmu.edu/~ark/personas/data/corenlp_plot_summaries.tar). The tagged data is stored in XML format.
-
-#### 5. Semantic character network comparison
+#### 6. Semantic character network comparison
 We define our character network as $G = (V, E)$, where the vertices represent the characters in the plot and the edges represent the interaction between the two characters. After constructing this network, we map each character to specific personas, as depicted in the diagram below.
 
 ![Persona mapping.png](./generated/images/persona_mapping.png)
@@ -96,7 +97,8 @@ We define our character network as $G = (V, E)$, where the vertices represent th
 After we get the persona network for each film, we "rebuild" the plot through theses networks. Our objective is to compare the similarity (or difference) between these networks, focusing on two aspects: node and edge overlaps. We will use the Jaccard index [[1]](https://en.wikipedia.org/wiki/Jaccard_index) to compute the node set similarity and the edge set similarity.
 $$J(A,B) = {{|A \cap B|}\over{|A \cup B|}} = {{|A \cap B|}\over{|A| + |B| - |A \cap B|}}$$
 
-#### 6. Final analysis on tropes and networks
+#### 7. Final analysis on characters and networks
+For our final analysis we will perform many visualizations such as bar plots, histograms, wordclouds and mainly network visualization to explore the research questions we have.
 
 
 
