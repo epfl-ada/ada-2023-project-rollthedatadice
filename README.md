@@ -50,9 +50,11 @@ Then, we get the semantic character network graph from each movie, in which ever
 7. Are there distinctive patterns in the portrayal of relationships between characters in movies of different times, and from different regions?
 #### Gender dynamics
 8. What are the most prevalent interaction patterns between characters of the same gender, and how do these patterns vary across genres? Could we uncover any clues about gender politics embodied in the movies?
-9. Perhaps it could be extended to factors like age, ethnicity, and so on.
+9. What is the distribution of male and female characters in main/side roles across different movie genres, and are there notable disparities?
+10. Are there specific genres where the dynamics of male main/side characters significantly contrast with those of female main/side characters, and vice versa?
+11. Perhaps it could be extended to factors like age, ethnicity, and so on.
 #### Graph comparison
-10. Can we classify these network graphs based on their geometrical and semantic features? And what can we learn from the classification results?
+10. Can we classify these network graphs based on their geometrical and semantic features? And what can we learn from the classification results? Would they fit into different genres, maybe? Or different narrative structures?
 
 
 ## Methods
