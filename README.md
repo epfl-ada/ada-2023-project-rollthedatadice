@@ -54,7 +54,7 @@ Then, we get the semantic character network graph from each movie, in which ever
 10. Are there specific genres where the dynamics of male main/side characters significantly contrast with those of female main/side characters, and vice versa?
 11. Perhaps it could be extended to factors like age, ethnicity, and so on.
 #### Graph comparison
-10. Can we classify these network graphs based on their geometrical and semantic features? And what can we learn from the classification results? Would they fit into different genres, maybe? Or different narrative structures?
+12. Can we classify these network graphs based on their geometrical and semantic features? And what can we learn from the classification results? Would they fit into different genres, maybe? Or different narrative structures?
 
 
 ## Methods
