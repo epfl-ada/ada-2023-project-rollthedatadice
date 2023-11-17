@@ -97,7 +97,6 @@ After we get the persona network for each film, we "rebuild" the plot through th
 $$J(A,B) = {{|A \cap B|}\over{|A \cup B|}} = {{|A \cap B|}\over{|A| + |B| - |A \cap B|}}$$
 ![Graph comparison.png](./generated/images/graph_comparison.png)
 
-For node set similarity, we just count the number of shared personas of two networks. In the example above, network (1) and (2) have 5 shared nodes. Edge set similarity is a stricter measure. We consider two edges identical if they connect the same nodes and exhibit the same (or very similar) semantic connections. Assuming e1=e1', e2=e2', we have 2 shared edges in the example above.
 #### 6. Final analysis on tropes and networks
 
 
