@@ -112,21 +112,21 @@ See `movie_metadata_eda.ipynb` in the `src` folder for more details.
 | Time         | Task                   | Status  |
 |--------------|----------------------- |---------|
 | 17, Nov      | EDA, Proposal writing  |✅       |
-| 24, Nov      | Parse the XML files    |         |
-| 31, Nov      | Persona clustering     |         |
-| 7, Dec       | Network analysis       |         |
-| 14, Dec      | Build the network      |         |
+| 24, Nov      | Run the persona pipeline, qualitative label, network pipeline    |         |
+| 31, Nov      | Main & side characters     |         |
+| 7, Dec       | Analysis of character interactions & gender dynamics     |         |
+| 14, Dec      | Network comparision & Final data visualizations      |         |
 | 21, Dec      | Finalize the story     |         |
 
 ## Team organization
 
 | Member       | Tasks                 |
 |--------------|-----------------------|
-| Mehdi        | Build the network      |
-| Yanzi        | Crawl tropes          |
-| Jiaming      | Metadata analysis     |
-| David        | Final data analysis   |
-| Ke           | Metadata analysis     |
+| Mehdi        | Build the network & adjective extraction      |
+| Yanzi        | Character dynamics         |
+| Jiaming      | Gender dynamics    |
+| David        | Main & side characters   |
+| Ke           | Network comparison     |
 
 
 
