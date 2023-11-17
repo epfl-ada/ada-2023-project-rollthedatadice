@@ -111,7 +111,7 @@ For our final analysis we will perform many visualizations such as bar plots, hi
 ## Initial analysis
 We did initial EDA for our movie metadata and character metadata to understand in which decades the films were made, the genre distribution, country of origin, movie language, character age, height, and so on. The explorary analysis helps us understand the dataset and provides ideas about future analysis aspects.
 
-See `milestone2.ipynb` in the `src` folder for more details.
+See [milestone2.ipynb](./src/milestone2.ipynb) folder for more details.
 
 ## Timeline
 | Time         | Task                   | Status  |
