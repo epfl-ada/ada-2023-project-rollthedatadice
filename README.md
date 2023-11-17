@@ -1,4 +1,4 @@
-# Personas from the films
+# Unveiling Character Dynamics: A Quantitative Exploration of Movie Narratives
 Let's RollTheDataDice!
 ## Table of Contents
 - [Structure of this repository](#structure-of-this-repository)
