@@ -29,7 +29,7 @@ Let's RollTheDataDice!
 \---temp                               # Temporary files
 ```
 ## Abstract
-Our project aims to address the critical gap in film analysis by quantitatively investigating character dynamics based on the dataset. We focus on identifying prevalent patterns among main and side characters, dissecting gender dynamics, and possibly exploring psychoanalytic dimensions. Further, we endeavor to reveal recurring themes, archetypes, and behavioral patterns that construct character networks to discern genre-specific tropes. By unraveling the intricate relationships between characters, we hope to provide insights to better understand the craft of storytelling in the dynamic landscape of cinema. 
+Our project aims to address the critical gap in film analysis by quantitatively investigating character dynamics based on our dataset. We focus on identifying prevalent patterns among main and side characters, dissecting gender dynamics, and possibly exploring psychoanalytic dimensions. Further, after extracting the semantic character network for each film, we endeavor to reveal recurring themes, archetypes, and behavioral patterns that construct these character networks to discern genre-specific tropes. By unraveling the intricate relationships between characters, we hope to provide insights to better understand the craft of storytelling in the ever-evolving landscape of cinema. 
 
 
 ## Research Questions
