@@ -53,7 +53,7 @@ def replace_pronouns(doc, charSex, characters):
                         theyStack.append([token.text, token.nbor(3).text])
                         neutralStack.append([token.text, token.nbor(3).text])
                 elif any(charSex.index.str.contains(token.text)):
-                    sex=charSex.loc[charSex.index.str.contains(token.text)]["actor_gender"].values[0]
+                    sex=charSex.loc[charSex.index.str.contains(token.text)]["Actor gender"].values[0]
                     if sex=="F":
                         sheStack.append(token.text)
                         neutralStack.append(token.text)
