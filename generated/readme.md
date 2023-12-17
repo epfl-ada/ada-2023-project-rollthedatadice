@@ -1,1 +1,0 @@
-For manipulated data.
