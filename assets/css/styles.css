@@ -1,0 +1,291 @@
+body {
+  background-color: #E5EEF7;
+  top: 0;
+  bottom: 0;
+  padding-left: 25vw;
+  padding-right: 5vw;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color:#595959;
+  font-weight:400;
+  text-align:left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#E29B0F;
+  margin:0 0 20px;
+}
+
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
+}
+
+h1, h2, h3 {
+  line-height:1.1;
+}
+
+h1 {
+  text-decoration: none;
+  font-size:32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+h2 {
+  font-size:24px;
+  font-weight: 500;
+  text-align: left;
+}
+
+h3, h4, h5, h6 {
+  color:#E29B0F;
+  font-size:20px;
+  text-align: left;
+  font-weight: 500;
+}
+
+a {
+  color:#E29B0F;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#C98A0D;
+}
+
+a small {
+  font-size:11px;
+  color:#E29B0F;
+  margin-top:-0.3em;
+  display:block;
+}
+
+a:hover small {
+  color:#C98A0D;
+}
+
+.wrapper {
+  width:100%;
+  margin:0 auto;
+}
+
+blockquote {
+  border-left:1px solid #e5e5e5;
+  margin:0;
+  padding:0 0 0 20px;
+  font-style:italic;
+}
+
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  color:#333;
+}
+
+pre {
+  padding:8px 15px;
+  background: #f8f8f8;
+  border-radius:5px;
+  border:1px solid #e5e5e5;
+  overflow-x: auto;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+}
+
+dt {
+  color:#444;
+  font-weight:500;
+}
+
+th {
+  color:#444;
+}
+
+img {
+  max-width:100%;
+}
+
+strong {
+  color:#222;
+  font-weight:500;
+}
+
+header ul li + li + li {
+  border-right:none;
+  width:89px;
+}
+
+header ul a strong {
+  font-size:14px;
+  display:block;
+  color:#222;
+}
+
+section {
+}
+
+small {
+  font-size:11px;
+}
+
+hr {
+  border:0;
+  background:#e5e5e5;
+  height:1px;
+  margin:0 0 20px;
+}
+
+footer {
+  width:300px;
+  float:left;
+  position:fixed;
+  bottom:10px;
+  background:#D4D4D4;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
+@media print, screen and (max-width: 960px) {
+
+  div.wrapper {
+    width:auto;
+    margin:0;
+  }
+
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
+  }
+
+  header {
+    padding-right:320px;
+  }
+
+  section {
+    border:1px solid #e5e5e5;
+    border-width:1px 0;
+    padding:20px 0;
+    margin:0 0 20px;
+  }
+
+  header a small {
+    display:inline;
+  }
+
+  header ul {
+    position:absolute;
+    right:50px;
+    top:52px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap:break-word;
+  }
+
+  header {
+    padding:0;
+  }
+
+  header ul, header p.view {
+    position:static;
+  }
+
+  pre, code {
+    word-wrap:normal;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:15px;
+  }
+
+  header ul {
+    width:99%;
+  }
+
+  header li, header ul li + li + li {
+    width:33%;
+  }
+}
+
+@media print {
+  body {
+    padding:0.4in;
+    font-size:12pt;
+    color:#444;
+  }
+}
+
+/* Farouk: stylization of the side bar + Juliette: scrollbar*/
+.side-bar{
+  height: 100%;
+  background: #854700;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 80vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow-y: scroll;
+  right-padding: 2vw;
+  text-align: left;
+  font-size: 12px;
+}
+.navig-section ul{
+  list-style:none;
+  position:relative;
+}
+.navig-section ul li{
+  padding: 5px 0;
+}
+.navig-section ul li a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.navig-section h1{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.externals-section h1{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.externals-section ul{
+  list-style:none;
+  position:relative;
+}
+.externals-section ul li{
+  padding: 5px 0;
+}
+.externals-section ul li a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Farouk: footer note*/
+.footer-note{
+  height:25px;
+  left: 20vw;
+  right: 5vw;
+  width: 75vw;
+  position: fixed;
+  background:#c0c0c0;
+  font-size:8;
+  text-align:center;
+  /*margin:0 15%;*/
+}

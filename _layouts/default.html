@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="icon" type="image/png"  href="assets/img/favicon.png">
+    <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width">
+  </head>
+
+  <div class="wrapper">
+      <!-- start: new side bar-->
+      <div class="side-bar">
+        <div class="navig-section">
+          <h1>Content Table</h1>
+          <ul>
+            <li><a href="#section_intro">Introduction</a></li>
+            <li><a href="#section_dataset">Dataset</a></li>
+            <li><a href="#section_clustering_approach">The Approach to Soft-Clustering the Users</a></li>
+            <li><a href="#section_clustering">User Clustering</a></li>
+            <li><a href="#section_overlap">To What Extent Do the Categories Overlap?</a></li>
+            <li><b><a href="#section_story">The Story Overview</b></li>
+            <li><a href="#section_ratings_reviews">How Do the Number of Ratings and Reviews Characterize the Categories?</a></li>
+            <li><a href="#section_countries">Are There More Users from a Specific Country for Certain Categories?</a></li>
+            <li><a href="#section_beers">Do Different Categories Have Different Beer Preferences?</a></li>
+            <li><a href="#section_sent_analysis">How Does Reviews' Sentiment Analysis Compare to Ratings for each Category ?</a></li>
+            <li><a href="#section_time_analysis">What Categories Does the Website Attract Most Overtime?</a></li>
+            <li><a href="#section_personas">Categories' Personas</a></li>
+            <li><a href="#section_takeaways">Takeaways</a></li>
+          </ul>
+        </div>
+        <div class="externals-section">
+          <h1>Externals</h1>
+          <ul>
+            <li><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
+            <li><a href="{{ site.github.zip_url }}">Download ZIP File</a></li>
+            <li><a href="{{ site.github.tar_url }}">Download TAR Ball</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- end: new side bar-->
+  
+  <body>
+      <header>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+        <table>
+          {% for nav in site.navigation %}
+            {% if nav.url contains "://" %}
+              <tr><th><a href="{{ nav.url }}">{{ nav.title }}</a></th></tr>
+            {% else %}
+              <tr><th><a href="{{ nav.url | relative_url }}">{{ nav.title }}</a></th></tr>
+            {% endif %}
+          {% endfor %}
+        </table>
+
+        <!--{% if site.show_downloads %}
+          <ul>
+            <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+            <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+            <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+          </ul>
+        {% endif %}-->
+      </header>
+
+      <!-- the content -->
+      <section>
+      {{ content }}
+      </section>
+      
+      <!-- the footer -->
+      <footer class="footer-note">
+        {% if site.github.is_project_page %}
+        <p>This data story was developped by Juliette Parchet, Albin Vernhes, Henrique Gameiro and Farouk Boukil</p>
+        {% endif %}
+      </footer>
+    </div>
+    
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+
+  {% if site.google_analytics %}
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+  {% endif %}
+  </body>
+</html>
