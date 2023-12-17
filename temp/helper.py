@@ -111,29 +111,25 @@ def replace_tokens_with_refs(tokens):
             updated_tokens.append(token.text)
     return updated_tokens
 
-def remove_stopwords_from_df(df):
-    # Define a function to remove stop words from a list of tokens or strings
-    def remove_stopwords(tokens_or_strings):
-        if isinstance(tokens_or_strings, list):
-            # If it's a list, check if elements are spaCy tokens or strings
-            cleaned_list = []
-            for item in tokens_or_strings:
-                if isinstance(item, spacy.tokens.Token):
-                    # If it's a spaCy token, filter out stop words
-                    cleaned_list.append(item.text) if not (item.is_stop or item.is_punct) else None
-                elif isinstance(item, str):
-                    # If it's a string, convert to spaCy tokens and filter out stop words
-                    tokens = nlp(item)
-                    cleaned_list.extend([token.text for token in tokens if not (token.is_stop or token.is_punct)])
-                else:
-                    return None
-            return cleaned_list if len(cleaned_list) > 0 else None
-        else:
-            return None
-    # Apply the function to the "Subject" and "Object" columns
-    df['Subject'] = df['Subject'].apply(remove_stopwords)
-    df['Object'] = df['Object'].apply(remove_stopwords)
-    return df
+
+def remove_stopwords(tokens_or_strings):
+    if isinstance(tokens_or_strings, list):
+        # If it's a list, check if elements are spaCy tokens or strings
+        cleaned_list = []
+        for item in tokens_or_strings:
+            if isinstance(item, spacy.tokens.Token):
+                # If it's a spaCy token, filter out stop words
+                cleaned_list.append(item.text) if not (item.is_stop or item.is_punct) else None
+            elif isinstance(item, str):
+                # If it's a string, convert to spaCy tokens and filter out stop words
+                tokens = nlp(item)
+                cleaned_list.extend([token.text for token in tokens if not (token.is_stop or token.is_punct)])
+            else:
+                return None
+        return cleaned_list if len(cleaned_list) > 0 else None
+    else:
+        return None
+
 
 #function that extracts the adjectives that describe a given character
 def get_adjectives_for_character(character, doc):
