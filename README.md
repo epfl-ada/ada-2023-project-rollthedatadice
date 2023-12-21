@@ -21,12 +21,8 @@ We use the [dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9
 
 We use a score-based approach to soft-cluster users using scores that are easily interpretable to humans. All of our scores satisfy that the larger they are the more they emphasize that the user may belong to the given category.
 
-<<<<<<< HEAD
 ## <a id="section_1">Single Character Analysis</a>
-### ** Persona Distribution Analysis:** 
-=======
-### Persona Distribution Analysis:
->>>>>>> b914c435c27959ae30846be8d50c7e9a88b5d222
+### **Persona Distribution Analysis** 
 Introduction:
 Welcome to the fascinating world of movie personas! In this section, we delve into the distribution of character personas among the vast landscape of movie plot summaries. As we explore, keep in mind the temporal and genre dimensions, as they play pivotal roles in shaping the rich tapestry of characters in cinema.
 
