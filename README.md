@@ -4,7 +4,17 @@
 ## <a id="section_intro">Introduction</a>
 Our project aims to address the critical gap in film analysis by quantitatively investigating character dynamics based on our dataset. We focus on identifying prevalent patterns among main and side characters, dissecting gender dynamics, and possibly exploring psychoanalytic dimensions. Further, after extracting the semantic character network for each film, we endeavor to reveal recurring themes, archetypes, and behavioral patterns that construct these character networks to discern genre-specific tropes. By unraveling the intricate relationships between characters, we hope to provide insights to better understand the craft of storytelling in the ever-evolving landscape of cinema.
 
-<i><sup>1</sup>natural soft-clustering: this approach is "cluster together users that satisfy a human-interpretable condition" rather than "cluster together users that are similar based on a similarity metric". Since one user can satisfy many conditions simultaneously or none at all, any user can belong to any given number of categories including none at all. That is what we mean by natural soft-clustering of users.</i>
+Welcome to the captivating world where stories unfold, emotions intertwine, and characters come to life on the silver screen! Our project embarks on a riveting journey through the heart of cinema, seeking to decode the intricate dance of characters within the vast tapestry of movie plot summaries.
+
+In the grand tradition of narrative storytelling, characters serve as the beating heart of every cinematic masterpiece. Beyond their individual narratives, the dynamics between characters shape the essence of storytelling, steering plots towards climactic peaks, heartwarming resolutions, or tragic conclusions.
+
+Why is understanding character dynamics so crucial? Well, as storytelling enthusiasts, filmmakers, and data enthusiasts alike, we believe that unraveling the patterns of character interactions unveils the very essence of cinematic storytelling. Characters are not mere entities; they are conduits through which narratives breathe, conveying emotions, conflicts, and resolutions.
+
+Academic Touchpoint: 🎓 As echoed by film theorist André Bazin, "A film is a petrified fountain of thought." Our journey aligns with this sentiment, aiming to unlock the flow of narrative thought embedded in character interactions.
+
+Buckle up as we embark on an odyssey through the realms of persona distributions, intricate character networks, and the pulsating rhythm of cinematic evolution! 🚀 Are you ready to peer into the soul of cinema and witness the magic that unfolds when characters take center stage? Let the curtain rise, and let the data story begin! 🌟
+
+<i><sup>1</sup>natural soft-clustering: this approach is "cluster together users that satisfy a human-interpretable condition" （for modification </i>
 
 ## <a id="section_dataset">Dataset</a>
 We use the [dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF) provided by the teaching team of "CS-401: Applied Data Analysis" at EPFL for the year 2022.
@@ -13,10 +23,19 @@ We use the [dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9
 
 We use a score-based approach to soft-cluster users using scores that are easily interpretable to humans. All of our scores satisfy that the larger they are the more they emphasize that the user may belong to the given category.
 
-### **Conformists Category (CFM)** 
-A user who rates beers close to their average rating, meaning that on average this user deviates little from the average opinion on the beers he/she rates.
+### ** Persona Distribution Analysis:** 
+Introduction:
+Welcome to the fascinating world of movie personas! In this section, we delve into the distribution of character personas among the vast landscape of movie plot summaries. As we explore, keep in mind the temporal and genre dimensions, as they play pivotal roles in shaping the rich tapestry of characters in cinema.
 
-This category may be regarded as an indicator of the herding effect where users tend, on average, to stick to the average opinion when rating beers even if the average opinion may be unfair towards a beer.
+Persona Distribution Across Genders:
+Our journey begins by examining how character personas are distributed across genders. Visualizing the data reveals intriguing patterns. Over the years, we observe a shift in the dominant personas for both male and female characters. Are traditional gender roles evolving? Let's find out!
+
+Persona Distribution Among Main and Side Characters:
+Zooming in, we scrutinize the personas assigned to main and side characters. Unveiling the nuances of their interactions, we discover that main characters often embody personas associated with pivotal actions, while side characters contribute unique flavors to the narrative. How do these roles intersect with genres?
+
+Intersectional Persona Analysis:
+Now, let's explore the intersectionality of personas. Are certain personas more prevalent among male main characters or female side characters? We uncover fascinating dynamics that challenge stereotypes and add depth to our understanding of character personas in film.
+
 
 <details>
   <summary>Show more</summary>
@@ -37,8 +56,23 @@ This category may be regarded as an indicator of the herding effect where users 
 
 <br>
 
-### **EXP Users Category (EXP)** 
-A user that rates beers close to the BA score that is displayed on the website for most beers. According to [BeerAdvocate](https://beeradvocate.com) administrators, the BA score is a reference score displayed on the website to give the users an idea about how a beer ranks among the beers of the same style.
+### **Interaction Analysis by Gender: Harmony and Discord on the Silver Screen** 
+In this act of our cinematic exploration, we focus our lens on the delicate dance of characters, specifically examining the interplay between genders. As characters navigate the intricate plots of movies, their interactions become a symphony of emotions, actions, and dialogues.
+
+🌟 Unveiling the Gender Dynamics:
+Picture this – a tapestry of character interactions where male and female protagonists engage in a harmonious ballet of emotions. Our analysis has unraveled the most common interactions between characters of the same gender. Do they share tender moments of camaraderie or clash in the tempest of conflicts?
+
+Academic Insight: 📚 Drawing inspiration from Carol Gilligan's work on gender and moral development, we scrutinize not just what characters do but how they connect emotionally.
+
+👫 Male-Male Connections: Enter the world of bromance and camaraderie. Do male characters primarily engage in the pursuit of shared goals, building friendships that weather the storms of their cinematic adventures?
+
+👭 Female-Female Bonds: Amidst the storytelling tapestry, female characters forge connections. Are these bonds characterized by solidarity, sisterhood, or perhaps the shared pursuit of common objectives?
+
+💑 Male-Female Duets: Ah, the dance of opposites! Venture into the realm of interactions between male and female protagonists. Is it a dance of romance, conflict, or a nuanced blend of both? The silver screen often mirrors the ebb and flow of relationships.
+
+📈 Temporal Evolution: Let's set our cinematic time machine in motion. How have these gender dynamics evolved over the years? Do cinematic narratives reflect changing societal norms and expectations?
+
+As we peer into the kaleidoscope of gendered interactions, our data-driven journey promises to unveil the nuanced dynamics that underpin the relationships between characters on the silver screen. 🎭 Are you ready to decode the secrets of gendered storytelling in cinema? Join us as we navigate through the emotional landscapes of male-male, female-female, and male-female character interactions! 🍿✨
 
 <i>Note that 94.5% of rated beers in the data available to us have a BA score.</i>
 
@@ -65,10 +99,23 @@ For lack of a better name, we will reference these users as the EXP users referr
 
 <br>
 
-### **Explorers Category (XPL)**
-A user that rates beers that have a few ratings only if not none at all. In the latter case, we consider that user to be the one who added the beer to the website. (yes, [BeerAdvocate](https://beeradvocate.com) allows any user to add new beers to its database.)
+### **Interaction Analysis by Character Type: Main Characters and Side Characters Through Time and Genre**
+Lights, camera, dimensions! In this segment of our cinematic odyssey, we journey through time and traverse the diverse landscapes of genres to uncover the secrets hidden within the dynamics between main and side characters.
 
-These users, therefore, shed light (positively or negatively) on unpopular beers by rating them, and some of them help populate the website with new beers which enriches the user experience on the website. 
+🌟 Main-Main Connections:
+As we step across cinematic eras, observe how the interactions between main characters have evolved over time. Do the romantic dialogues of yesteryear differ from the action-packed exchanges of the modern era? Time, it seems, leaves an indelible mark on the relationships between protagonists.
+
+Academic Glimpse: 🎓 Channeling the insights of film historian David Bordwell, we contemplate the impact of changing film techniques and narrative structures on the dynamics between main characters across different cinematic periods.
+
+👥 Side-Side Bonds:
+Now, let's journey through genres, where the roles of side characters unfold against distinct backdrops. Are the side-side bonds of a classic film noir different from those in a contemporary romantic comedy? Immerse yourself in the genre-specific nuances that shape the interactions between supporting characters.
+
+🌐 Main-Side Interactions:
+Venture through time and genres as we unravel the intricate dance between main and side characters. Do these interactions adapt to the storytelling conventions of film noir, comedy, or science fiction? The evolution of character dynamics becomes even more pronounced as we navigate through both temporal and genre dimensions.
+
+📈 Temporal Evolution and Genre Extravaganza: Beyond mere exploration, let's synchronize the ticking of the clock with the beats of different genres. How have the interactions between main and side characters changed over time within specific genres? Do certain genres dictate unique character dynamics that transcend temporal boundaries?
+
+As we embark on this multidimensional exploration, the narrative unfolds, weaving together the threads of time and genre into a rich tapestry of character dynamics. 🌌 Join us on this immersive journey through cinematic eras and genre landscapes, where characters, both main and side, play their roles in the ever-evolving story of the silver screen! 🎭🍿
 
 <details>
   <summary>Show more</summary>
@@ -86,11 +133,35 @@ These users, therefore, shed light (positively or negatively) on unpopular beers
 
 <br>
 
-### **Adventurer Category (ADV)**
-A user that rates often enough beers that are slightly okay at best. 
+### **Intersectional Analysis: Where Gender and Character Type Converge**
+The stage is set for a detailed exploration of character dynamics as we unfold the intricacies of four key combinations: Male-Main, Male-Side, Female-Main, and Female-Side. Each combination tells a unique story, revealing the dynamics that underpin the interactions between characters of different genders and roles.
 
-These users are willing to risk trying out bad beers. We are interested in such users because they may contribute to the visibility of underrated beers on the website and so indirectly to the user experience.
+1. Male-Main Characters:
+🎭 Behind the Masculine Lens
 
+How many male main characters grace the cinematic canvas? Unveil the personas that embody the essence of the narrative.
+Dive into the interactions between male main characters. Are they bound by shared pursuits, rivalries, or collaborations? Explore the emotional landscapes that unfold within this dynamic group.
+2. Male-Side Characters:
+🎬 Supporting Roles in Focus
+
+Shine the spotlight on male side characters as they add depth and complexity to the narrative. How do their roles influence the overarching story?
+Analyze the interactions between male side characters and other character types. Are they amplifying the journeys of the main characters or crafting unique subplots?
+3. Female-Main Characters:
+🌟 Leading Ladies in Action
+
+Illuminate the screen with the presence of female main characters. What personas define their roles, and how do they shape the narrative arc?
+Delve into the interactions between female main characters. Are their connections characterized by solidarity, competition, or a blend of both? Uncover the emotional layers that unfold within this ensemble.
+4. Female-Side Characters:
+🌈 Side Characters Stepping Forward
+
+Acknowledge the roles played by female side characters, often the unsung heroes of the cinematic narrative. How do they contribute to the richness of the story?
+Investigate the interactions between female side characters and other character types. Do they forge unique bonds or add intricate layers to the relationships within the narrative?
+📊 Quantifying the Ensemble:
+Before the characters take their places on the stage, let's quantify the ensemble. How many characters fall into each category? Are there notable trends or imbalances that catch the eye?
+
+🌐 Temporal Evolution and Genre Dimensions: As we traverse through time and explore various genres, how have the numbers and interactions within each character category evolved? Does the cinematic landscape reflect changing societal norms and storytelling conventions?
+
+As we unveil the personas and interactions within each character combination, a vivid narrative unfolds, shedding light on the intricate dance of characters within the intersectional realms of gender and roles. 🎥 Join us as we unravel the stories woven into Male-Main, Male-Side, Female-Main, and Female-Side character dynamics, where each combination contributes to the symphony of cinematic storytelling! 🍿🎶
 <details>
   <summary>Show more</summary>
   
