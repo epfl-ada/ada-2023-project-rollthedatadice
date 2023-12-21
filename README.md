@@ -2,8 +2,6 @@
 ![Beer Banner](./assets/img/banner.webp "film banner")
 
 ## <a id="section_intro">Introduction</a>
-Our project aims to address the critical gap in film analysis by quantitatively investigating character dynamics based on our dataset. We focus on identifying prevalent patterns among main and side characters, dissecting gender dynamics, and possibly exploring psychoanalytic dimensions. Further, after extracting the semantic character network for each film, we endeavor to reveal recurring themes, archetypes, and behavioral patterns that construct these character networks to discern genre-specific tropes. By unraveling the intricate relationships between characters, we hope to provide insights to better understand the craft of storytelling in the ever-evolving landscape of cinema.
-
 Welcome to the captivating world where stories unfold, emotions intertwine, and characters come to life on the silver screen! Our project embarks on a riveting journey through the heart of cinema, seeking to decode the intricate dance of characters within the vast tapestry of movie plot summaries.
 
 In the grand tradition of narrative storytelling, characters serve as the beating heart of every cinematic masterpiece. Beyond their individual narratives, the dynamics between characters shape the essence of storytelling, steering plots towards climactic peaks, heartwarming resolutions, or tragic conclusions.
@@ -23,6 +21,7 @@ We use the [dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9
 
 We use a score-based approach to soft-cluster users using scores that are easily interpretable to humans. All of our scores satisfy that the larger they are the more they emphasize that the user may belong to the given category.
 
+## <a id="section_1">Single Character Analysis</a>
 ### ** Persona Distribution Analysis:** 
 Introduction:
 Welcome to the fascinating world of movie personas! In this section, we delve into the distribution of character personas among the vast landscape of movie plot summaries. As we explore, keep in mind the temporal and genre dimensions, as they play pivotal roles in shaping the rich tapestry of characters in cinema.
@@ -56,6 +55,7 @@ Now, let's explore the intersectionality of personas. Are certain personas more 
 
 <br>
 
+## <a id="section_2">Interaction Analysis by Gender</a>
 ### **Interaction Analysis by Gender: Harmony and Discord on the Silver Screen** 
 In this act of our cinematic exploration, we focus our lens on the delicate dance of characters, specifically examining the interplay between genders. As characters navigate the intricate plots of movies, their interactions become a symphony of emotions, actions, and dialogues.
 
@@ -99,6 +99,7 @@ For lack of a better name, we will reference these users as the EXP users referr
 
 <br>
 
+## <a id="section_3">Interaction Analysis by Character Type</a>
 ### **Interaction Analysis by Character Type: Main Characters and Side Characters Through Time and Genre**
 Lights, camera, dimensions! In this segment of our cinematic odyssey, we journey through time and traverse the diverse landscapes of genres to uncover the secrets hidden within the dynamics between main and side characters.
 
@@ -133,6 +134,7 @@ As we embark on this multidimensional exploration, the narrative unfolds, weavin
 
 <br>
 
+## <a id="section_4">Intersectional Analysis</a>
 ### **Intersectional Analysis: Where Gender and Character Type Converge**
 The stage is set for a detailed exploration of character dynamics as we unfold the intricacies of four key combinations: Male-Main, Male-Side, Female-Main, and Female-Side. Each combination tells a unique story, revealing the dynamics that underpin the interactions between characters of different genders and roles.
 
