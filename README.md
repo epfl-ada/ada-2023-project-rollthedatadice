@@ -24,7 +24,7 @@ We use a score-based approach to soft-cluster users using scores that are easily
 ## <a id="section_1">Understanding Individual Characters</a>
 ### **Peering into the Essence of Characters: A Journey into Personas** 
 
-Welcome to the core of our cinematic exploration, where characters reveal their individuality through distinct personas. In this phase of the data story, we delve into the latent behavioral and personality patterns that define characters before they embark on their narrative journeys.
+Welcome to the beginning of our cinematic exploration, where characters reveal their individuality through distinct personas. In this phase of the data story, we delve into the latent behavioral and personality patterns that define characters before they embark on their narrative journeys.
 
 #### What are Personas?
 
@@ -39,14 +39,11 @@ Our journey begins by dissecting the personas of characters based on gender. Wha
 
 {% include persona_gender_percentage.html %}
 
+We can see from the graph, the top 2 personas present a great gender discrepancy.
+
 As the cinematic timeline unfolds, do we witness an evolution in these archetypes, reflecting changing societal norms?
 
 {% include persona_gender_temporal.html %}
-
-Interactive Graphs:
-
-[Top Male Personas Over Time]
-[Top Female Personas Over Time]
 
 Zooming in, we explore the nuances of personas within different genres. Does the stereotypical persona of a male or female character change when the stage is set in a romance, action, or sci-fi setting?
 
