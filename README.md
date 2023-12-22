@@ -138,14 +138,14 @@ Analyzing our data reveals a pronounced bias toward heterosexual relationships, 
 ### **Interaction Analysis by Character Type: Main Characters and Side Characters Through Time and Genre**
 Lights, camera, dimensions! In this segment of our cinematic odyssey, we traverse the diverse landscapes of genres to uncover the secrets hidden within the dynamics between main and side characters.
 
-As we step across cinematic eras, observe how the interactions between main characters have evolved over time. Do the romantic dialogues of yesteryear differ from the action-packed exchanges of the modern era? Also, let's journey through genres, where the roles of side characters unfold against distinct backdrops. Are the side-side bonds of a classic film noir different from those in a contemporary romantic comedy? Immerse yourself in the genre-specific nuances that shape the interactions between supporting characters. Do these interactions adapt to the storytelling conventions of film noir, comedy, or science fiction? 
+As we step across cinematic eras, observe how the interactions between main characters have evolved over time. Do the romantic dialogues of yesteryear differ from the action-packed exchanges of the modern era? Also, let's journey through genres, where the roles of side characters unfold against distinct backdrops. Are the side-side bonds of a classic film noir different from those in a contemporary romantic comedy? Immerse yourself in the genre-specific nuances that shape the interactions between supporting characters.
 
 
 {% include crime_main.html %}
 {% include crime_side.html %}
 
-{% include Romantic comedy_main.html %}
-{% include Romantic comedy_side.html %}
+{% include Romantic_comedy_main.html %}
+{% include Romantic_comedy_side.html %}
 
 
 Examining the interaction patterns within Crime movies, it becomes evident that intense conflicts are prevalent, as one would anticipate in this genre. Interestingly, there's a noteworthy trend where main characters often assume mentoring roles and engage in collaboration with side characters.
