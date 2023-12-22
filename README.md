@@ -34,7 +34,13 @@ Interactive Persona Graphs:
 
 Gendered Personas: Navigating Binary Essences
 Male and Female Personas:
-Our journey begins by dissecting the personas of characters based on gender. What are the most common behavioral archetypes for male and female characters? As the cinematic timeline unfolds, do we witness an evolution in these archetypes, reflecting changing societal norms?
+Our journey begins by dissecting the personas of characters based on gender. What are the most common behavioral archetypes for male and female characters? 
+
+{% include persona_gender_percentage.html %}
+
+As the cinematic timeline unfolds, do we witness an evolution in these archetypes, reflecting changing societal norms?
+
+{% include persona_gender_temporal.html %}
 
 Interactive Graphs:
 
