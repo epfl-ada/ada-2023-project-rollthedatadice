@@ -21,19 +21,50 @@ We use the [dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9
 
 We use a score-based approach to soft-cluster users using scores that are easily interpretable to humans. All of our scores satisfy that the larger they are the more they emphasize that the user may belong to the given category.
 
-## <a id="section_1">Single Character Analysis</a>
-### **Persona Distribution Analysis** 
-Introduction:
-Welcome to the fascinating world of movie personas! In this section, we delve into the distribution of character personas among the vast landscape of movie plot summaries. As we explore, keep in mind the temporal and genre dimensions, as they play pivotal roles in shaping the rich tapestry of characters in cinema.
+## <a id="section_1">Understanding Individual Characters</a>
+### **Peering into the Essence of Characters: A Journey into Personas** 
 
-Persona Distribution Across Genders:
-Our journey begins by examining how character personas are distributed across genders. Visualizing the data reveals intriguing patterns. Over the years, we observe a shift in the dominant personas for both male and female characters. Are traditional gender roles evolving? Let's find out!
+Welcome to the core of our cinematic exploration, where characters reveal their individuality through distinct personas. In this phase of the data story, we delve into the latent behavioral and personality patterns that define characters before they embark on their narrative journeys.
 
-Persona Distribution Among Main and Side Characters:
-Zooming in, we scrutinize the personas assigned to main and side characters. Unveiling the nuances of their interactions, we discover that main characters often embody personas associated with pivotal actions, while side characters contribute unique flavors to the narrative. How do these roles intersect with genres?
+What are Personas?
+In the world of movie plot summaries, personas serve as the key to understanding the potential and latent traits of characters. These personas represent behavioral archetypes, offering a glimpse into how characters might navigate the intricacies of their cinematic worlds.
 
-Intersectional Persona Analysis:
-Now, let's explore the intersectionality of personas. Are certain personas more prevalent among male main characters or female side characters? We uncover fascinating dynamics that challenge stereotypes and add depth to our understanding of character personas in film.
+Interactive Persona Graphs:
+[Explore Interactive Persona Graphs]
+
+Gendered Personas: Navigating Binary Essences
+Male and Female Personas:
+Our journey begins by dissecting the personas of characters based on gender. What are the most common behavioral archetypes for male and female characters? As the cinematic timeline unfolds, do we witness an evolution in these archetypes, reflecting changing societal norms?
+
+Interactive Graphs:
+
+[Top Male Personas Over Time]
+[Top Female Personas Over Time]
+Genre-Specific Persona Trends:
+Zooming in, we explore the nuances of personas within different genres. Does the stereotypical persona of a male or female character change when the stage is set in a romance, action, or sci-fi setting?
+
+Interactive Graphs:
+
+[Male Persona Distribution Across Genres]
+[Female Persona Distribution Across Genres]
+Character Type Personas: Main Stage vs. Side Story
+Main and Side Characters:
+As we shift our gaze to character types, the question arises: do main and side characters typically share similar personas, or do their behavioral archetypes diverge?
+
+Interactive Graphs:
+
+[Main Character Persona Distribution]
+[Side Character Persona Distribution]
+Intersectional Insights: Gender and Character Type Convergence
+In the final act of this persona-driven exploration, we unravel the intersectionality of gender and character type. How do male main characters differ in persona from their female side counterparts, and vice versa?
+
+Interactive Graphs:
+
+[Male Main vs. Female Side Persona Interactions]
+[Female Main vs. Male Side Persona Interactions]
+Closing the Curtain: A Persona-Painted Prelude
+As we draw the curtain on this first part of our data story, the personas of individual characters emerge as the backdrop, setting the stage for the intricate interactions that follow. Join us in the next act as we shift our focus from individual character nuances to the dynamic dance of personas in the realm of character interactions.
+
 
 
 <details>
