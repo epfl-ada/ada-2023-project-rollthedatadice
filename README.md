@@ -1,7 +1,6 @@
 
-![Beer Banner](./assets/img/banner.webp "film banner")
+![Film Banner](./assets/img/banner.webp "film banner")
 
-## <a id="section_intro">Introduction</a>
 Welcome to the captivating world where stories unfold, emotions intertwine, and characters come to life on the silver screen! Our project sets out on a riveting journey through the heart of cinema, seeking to decode the intricate dance of characters within the vast tapestry of movie plot summaries.
 
 In the grand tradition of narrative storytelling, characters serve as the beating heart of every cinematic masterpiece. Beyond their individual narratives, the dynamics between characters shape the essence of storytelling, steering plots towards climactic peaks, heartwarming resolutions, or tragic conclusions.
@@ -14,16 +13,16 @@ Buckle up as we begin the odyssey through the realms of persona distributions, i
 ## <a id="section_1">Understanding Individual Characters</a>
 ### Peering into the Essence of Characters: A Journey into Personas
 
-This is the beginning of our cinematic exploration, where characters reveal their individuality through distinct personas. In this phase of the data story, we delve into the latent behavioral and personality patterns that define characters before walking along their narrative pathways.
+This is the beginning of our cinematic exploration, where characters reveal their individuality through distinct personas. Now, let's delve into the latent behavioral and personality patterns that define characters before walking along their narrative pathways.
 
 #### What are Personas?
 
-In the world of movie plot summaries, personas serve as the key to understanding the potential and latent traits of characters. These personas represent behavioral archetypes, offering a glimpse into how characters might navigate the intricacies of their cinematic worlds.
+In movie plot summaries, personas serve as the key to understanding the potential and latent traits of characters. These personas represent behavioral archetypes, offering a glimpse into how characters might navigate the intricacies of their cinematic worlds.
 
 <details>
   <summary>Show more</summary>
   
-talk about how we got the persona by running the pipeline
+We get the personas by running the pipeline outlined in the "Learning Latent Personas of Film Characters" paper [Link](https://github.com/dbamman/ACL2013_Personas/tree/master?tab=readme-ov-file). 
    
 </details>
 
