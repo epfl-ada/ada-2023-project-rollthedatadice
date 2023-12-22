@@ -84,8 +84,6 @@ We define our character network as $G = (V, E)$, where the vertices represent th
 
 ![Persona mapping.png](./generated/images/persona_mapping.png)
 
-After we get the persona network for each film, we "rebuild" the plot through these networks. Our objective is to compare the similarity (or difference) between these networks, focusing on two aspects: node and edge overlaps. We will use the Jaccard index [[1]](https://en.wikipedia.org/wiki/Jaccard_index) to compute the node set similarity and the edge set similarity.
-$$J(A,B) = {{|A \cap B|}\over{|A \cup B|}} = {{|A \cap B|}\over{|A| + |B| - |A \cap B|}}$$
 
 **7. Final analysis on characters and networks**
 For our final analysis we will perform many visualizations such as bar plots, histograms, wordclouds and mainly network visualization to explore the research questions we have.
