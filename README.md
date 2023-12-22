@@ -35,7 +35,7 @@ Our journey begins by dissecting the personas of characters based on gender. Wha
 
 {% include persona_gender_percentage.html %}
 
-We can see from the graph, the top 2 personas present a great gender discrepancy.
+We can see from the graph, the top 2 personas, 10 and 47, present a great gender discrepancy.
 
 As the cinematic timeline unfolds, do we witness an evolution in these archetypes, reflecting changing societal norms?
 
@@ -56,7 +56,14 @@ Does it vary over time?
 
 {% include chartype__persona_temporal.html %}
 
-From both graphs above, it seems there's no significant different in main and side characters' personas.
+From both graphs above, it seems there's no significant difference in main and side characters' personas.
+
+<details>
+  <summary>Show more</summary>
+  
+talk about whether there's a significant difference. T test?
+   
+</details>
 
 Intersectional Insights: Gender and Character Type Convergence
 
