@@ -140,15 +140,16 @@ Lights, camera, dimensions! In this segment of our cinematic odyssey, we travers
 
 As we step across cinematic eras, observe how the interactions between main characters have evolved over time. Do the romantic dialogues of yesteryear differ from the action-packed exchanges of the modern era? Also, let's journey through genres, where the roles of side characters unfold against distinct backdrops. Are the side-side bonds of a classic film noir different from those in a contemporary romantic comedy? Immerse yourself in the genre-specific nuances that shape the interactions between supporting characters.
 
-
+**Crime**
 {% include crime_main.html %}
 {% include crime_side.html %}
+<br>
+Examining the interaction patterns within Crime movies, it becomes evident that intense conflicts are prevalent, as one would anticipate in this genre. Interestingly, there's a noteworthy trend where main characters often assume mentoring roles and engage in collaboration with side characters.
+<br>
 
+**Romantic Comedy**
 {% include Romantic_comedy_main.html %}
 {% include Romantic_comedy_side.html %}
-
-
-Examining the interaction patterns within Crime movies, it becomes evident that intense conflicts are prevalent, as one would anticipate in this genre. Interestingly, there's a noteworthy trend where main characters often assume mentoring roles and engage in collaboration with side characters.
 
 Contrastingly, when delving into Romance movies, the primary theme revolves around love. However, a nuanced observation reveals a unique dynamic—side characters frequently serve as obstacles to the main characters. The interactions between side and main characters tend to be characterized by conflict, while side characters establish collaborative connections among themselves.
 
@@ -157,10 +158,13 @@ Contrastingly, when delving into Romance movies, the primary theme revolves arou
 
 ## <a id="section_4">Takeaway</a>
 🔍 **Persona Insights**
+
 Our exploration into character personas revealed a diverse range of behavioral patterns. Different genders showed varying distributions of personas, while main and side characters exhibited similar patterns.
 
 🎭 **Gendered Dynamics**
+
 Analyzing interactions between characters brought out nuanced patterns. Male-male and female-female interactions displayed unique dynamics. The intersection of gender and character type added complexity. We found distinct interaction patterns across genders and within the same gender.
 
 🚧 **Limitations**
+
 Interpreting character personas was challenging, as associating words with precise labels proved elusive. This led to a level of ambiguity in understanding the personas' real-world implications.
