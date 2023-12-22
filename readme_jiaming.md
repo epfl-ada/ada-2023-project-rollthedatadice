@@ -69,11 +69,13 @@ As we shift our gaze to character types, the question arises: do main and side c
 
 {% include chartype__persona.html %}
 
-Does it vary over time?
+Unlike the gender bias, with most personas, main characters and side characters are quite similar.
+
+Then, does it vary over time?
 
 {% include chartype__persona_temporal.html %}
 
-From both graphs above, it seems there's no significant difference in main and side characters' personas.
+Again, from both graphs above, it seems there's no obviously giant difference in main and side characters' personas in terms of their types and trends.
 
 <details>
   <summary>Show more</summary>
