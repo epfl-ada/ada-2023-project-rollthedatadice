@@ -62,8 +62,7 @@ When temporal factor are also taken into account, it's obvious that male charact
 
 Zooming in, we explore the nuances of personas within different genres. Does the stereotypical persona of a male or female character change when the stage is set in a romance, action, or sci-fi setting?
 
-{% include female_genre_persona.html %}
-{% include male_genre_persona.html %}
+{% include fcombined_graph.html %}
 
 #### Character Type Personas: Main Stage vs. Side Story
 
