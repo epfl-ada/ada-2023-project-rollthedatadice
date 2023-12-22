@@ -2,23 +2,19 @@
 ![Beer Banner](./assets/img/banner.webp "film banner")
 
 ## <a id="section_intro">Introduction</a>
-Welcome to the captivating world where stories unfold, emotions intertwine, and characters come to life on the silver screen! Our project embarks on a riveting journey through the heart of cinema, seeking to decode the intricate dance of characters within the vast tapestry of movie plot summaries.
+Welcome to the captivating world where stories unfold, emotions intertwine, and characters come to life on the silver screen! Our project sets out on a riveting journey through the heart of cinema, seeking to decode the intricate dance of characters within the vast tapestry of movie plot summaries.
 
 In the grand tradition of narrative storytelling, characters serve as the beating heart of every cinematic masterpiece. Beyond their individual narratives, the dynamics between characters shape the essence of storytelling, steering plots towards climactic peaks, heartwarming resolutions, or tragic conclusions.
 
 Why is understanding character dynamics so crucial? Well, as storytelling enthusiasts, filmmakers, and data enthusiasts alike, we believe that unraveling the patterns of character interactions unveils the very essence of cinematic storytelling. Characters are not mere entities; they are conduits through which narratives breathe, conveying emotions, conflicts, and resolutions.
 
-Academic Touchpoint: 🎓 As echoed by Jean Cocteau, "A film is a petrified fountain of thought." Our journey aligns with this sentiment, aiming to unlock the flow of narrative thought embedded in character interactions.
-
-Buckle up as we embark on an odyssey through the realms of persona distributions, intricate character networks, and the pulsating rhythm of cinematic evolution! 🚀 Are you ready to peer into the soul of cinema and witness the magic that unfolds when characters take center stage? Let the curtain rise, and let the data story begin! 🌟
-
-<i><sup>1</sup>natural soft-clustering: this approach is "cluster together users that satisfy a human-interpretable condition" （for modification </i>
+Buckle up as we begin the odyssey through the realms of persona distributions, intricate character networks, and the pulsating rhythm of cinematic evolution! 🚀 Are you ready to peer into the soul of cinema and witness the magic that unfolds when characters take center stage? Let the curtain rise, and let the data story begin! 🌟
 
 
 ## <a id="section_1">Understanding Individual Characters</a>
 ### **Peering into the Essence of Characters: A Journey into Personas** 
 
-Welcome to the beginning of our cinematic exploration, where characters reveal their individuality through distinct personas. In this phase of the data story, we delve into the latent behavioral and personality patterns that define characters before they embark on their narrative journeys.
+This is the beginning of our cinematic exploration, where characters reveal their individuality through distinct personas. In this phase of the data story, we delve into the latent behavioral and personality patterns that define characters before walking along their narrative pathways.
 
 #### What are Personas?
 
@@ -45,9 +41,6 @@ Our journey begins by dissecting the personas of characters based on gender. Wha
 Actually we don't really have gender information about the characters. We could only use the corresponding actor's gender instead, which might bring trivial error.
    
 </details>
-
-{% include persona_genre_mapping.html %}
-
 
 {% include gender_persona_percentage.html %}
 
