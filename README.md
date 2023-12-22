@@ -25,15 +25,18 @@ In the realm of film, personas encapsulate a blend of distinctive traits by whic
 We get the personas by running the pipeline outlined in the "Learning Latent Personas of Film Characters" paper [Link](https://github.com/dbamman/ACL2013_Personas/tree/master?tab=readme-ov-file). 
    
 </details>
-
+<br>
 
 We can take a look at the most associated words for each persona to get a basic impression.
 
 {% include wordcloud_persona.html %}
 
-{% include persona_dash.html %}
+![Film Banner](./assets/img/dash.png.jpg "persona")
 
-Also, how each persona is linked to different genres:
+Due to some technical issues, we are not able to display the graph in an interactive way. On the left side is the 2-d mapping of the 50 personas. Closer distance means they have similar attributes. Bigger size means they appear more in the film dataset. On the right side we have the word frequency within each persona type. Here we take the screenshot of persona 47, the most common personas for male characters in our dataset.    
+
+
+Also, how each persona (of both gender) is distributed among different genres:
 
 {% include persona_genre_mapping.html %}
 
@@ -49,7 +52,7 @@ Our journey begins by dissecting the personas of characters based on gender. Wha
 Actually we don't really have gender information about the characters. We could only use the corresponding actor's gender instead, which might bring trivial error.
    
 </details>
-
+<br>
 {% include gender_persona_percentage.html %}
 
 We can see from the graph, persona 10 and persona 47, which are the top 2 personas, both show great gender discrepancy. (bear in mind that there are actually way more male characters than female characters). Proportionally, just like persona 10, persona 0, 23, 33, 43 all have much more female than male. By contrast, more male are found in persona 3, 5, 40, as in persona 47.
@@ -63,6 +66,8 @@ When temporal factor are also taken into account, it's obvious that male charact
 Zooming in, we explore the nuances of personas within different genres. Does the stereotypical persona of a male or female character change when the stage is set in a romance, action, or sci-fi setting?
 
 {% include combined_graph.html %}
+
+Among the top 10 genres, both male and female characters display various persona distribution. It's interesting to note that comparatively male characters tend to have more diverse personas than female characters. But if we take a closer look at male characters alone,  we can see that they are portrayed more sterotypically in Crime Fiction, Thriller and Action. While female characters are quite likely to be of persona 10 in Drama, Blackandwhite, Romance Film, Indie and Comedy.
 
 #### Character Type Personas: Main Stage vs. Side Story
 
@@ -78,12 +83,6 @@ Then, does it vary over time?
 
 Again, from both graphs above, it seems there's no obviously giant difference in main and side characters' personas in terms of their types and trends.
 
-<details>
-  <summary>Show more</summary>
-  
-talk about whether there's a significant difference. T test?
-   
-</details>
 
 
 #### Closing the Curtain: A Persona-Painted Prelude
@@ -94,10 +93,12 @@ As we draw the curtain on this first part of our data story, the personas of ind
 <br>
 
 ## <a id="section_2">Interaction Analysis by Gender</a>
-###  Gendered Symphony of Character Interactions
-### From Personas to Partnerships: Harmony and Discord on the Silver Screen
+
+#### From Personas to Partnerships: Harmony and Discord on the Silver Screen
 
 Having delved into the individual personas that shape the characters, we now turn our gaze towards the dynamic partnerships and interactions that unfold on the silver screen. In this chapter, we explore how the distinctive personas we unveiled in the previous act come to life in the intricate dance of gendered character interactions.
+
+####  Gendered Symphony of Character Interactions
 
 🌐 Mapping the Cinematic Web:
 To unravel the secrets of character interactions, we build the movie networks. Each film's plot summary transforms into a complex tapestry of relationships, woven into a network graph. Characters become nodes, and their interactions form the connecting threads. This network allows us to visualize the intricate dynamics between characters, offering a unique lens through which we decode the gendered symphony of cinematic storytelling. Here we show an example.
@@ -108,47 +109,20 @@ To unravel the secrets of character interactions, we build the movie networks. E
   <summary>Show more</summary>
 We use SpaCy to get the NER tags in each sentence. Then we parse each sentence to get the get Subject-Verb-Object (SVO) triples. We use only keep the triples whose subject is a character and the object is also a character. We then use the subject and object as the nodes and the verb as the edge.
 </details>
-
+<br>
 🌟 Unveiling the Gender Dynamics:
 Picture this – a tapestry of character interactions where male and female protagonists engage in a harmonious ballet of emotions. Our analysis has unraveled the most common interactions between characters of the same gender. Do they share tender moments of camaraderie or clash in the tempest of conflicts? Let's see the results we observed from our character interaction dynamics. Here we go one step further by mapping the "verb" interaction to some more general relationships.
+<br>
+<br>
 <details>
   <summary>Show more</summary>
 We manually define some most common interactions, including love, fight, reject, fear, care, etc. We get the word embedding for these words, and pick 50 most related words in the semantic space. Then we map the "verb" edges to these more general words. In this way, we can get as much relationship clusters as what we want.
 </details>
-
+<br>
 {% include female_behavior.html %}
 {% include male_behavior.html %}
 
-#### The Male-Male Tapestry: Bonds Beyond Brotherhood
-👬 Brotherhood and Beyond:
-Behold the camaraderie, the alliances, and the conflicts as male characters forge connections that go beyond mere friendship. From shared goals to epic showdowns, the male-male tapestry is rich with the resonances of character interactions.
-
-📈 Dynamic Evolution:
-Explore how these interactions have evolved over time. Do modern bromances differ from those of classic cinema, reflecting the shifting tides of societal expectations?
-
-#### Female-Female Symphony: Solidarity in Cinematic Sorority
-👯‍♀️ Sisterhood in Action:
-Delve into the world of female characters as they navigate the cinematic landscape together. Do they share secrets, conquer challenges, or perhaps engage in playful banter? The female-female symphony is a celebration of solidarity and strength.
-
-📊 A Glimpse Through Time:
-Trace the evolution of these relationships across different eras. How have on-screen female friendships mirrored the changing roles of women in society?
-
-#### The Dance of Opposites: Male-Female Duets
-💑 Romance, Conflict, or Both:
-Witness the dance between male and female protagonists, where the sparks of romance, the fires of conflict, or a delicate balance of both come to life. The male-female duets are a captivating exploration of love, tension, and everything in between.
-{% include female_behavior.html %}
-{% include male_behavior.html %}
-
-🔍 Genre-Specific Intricacies:
-Zoom into different genres to unravel how the dynamics of male-female interactions vary. Is the romance in a comedy different from that in a drama?
-
-As we peer into the kaleidoscope of gendered interactions, our data-driven journey promises to unveil the nuanced dynamics that underpin the relationships between characters on the silver screen. 🎭 Are you ready to decode the secrets of gendered storytelling in cinema? Join us as we navigate through the emotional landscapes of male-male, female-female, and male-female character interactions! 🍿✨
-
-
-<details>
-  <summary>Show more</summary>
-  details
-</details>
+Analyzing our data reveals a pronounced bias toward heterosexual relationships, with characters of opposite sexualities exhibiting a higher likelihood of engaging in romantic interactions. Notably, male characters tend to engage in more violent interactions among themselves, while female characters are more inclined towards nurturing and mentoring relationships within their own gender. This pattern underscores the enduring influence of traditional gender roles, perpetuated over years through narrative structures.
 
 <br>
 
@@ -171,68 +145,6 @@ Venture through time and genres as we unravel the intricate dance between main a
 
 As we embark on this multidimensional exploration, the narrative unfolds, weaving together the threads of time and genre into a rich tapestry of character dynamics. 🌌 Join us on this immersive journey through cinematic eras and genre landscapes, where characters, both main and side, play their roles in the ever-evolving story of the silver screen! 🎭🍿
 
-<details>
-  <summary>Show more</summary>
-  This score provides us with information about which users contribute to enriching the experience on the website, either because they rate beers that do not get much attention, or because they "introduce" new beers on the website by being the first people to rate those beers.
-  
-  A user $u$ is an explorer if, often enough, among the beers he rated, he/she was among the first 10 users to rate that beer. The score is, therefore: 
-
-  $$XPL_u = \sum_{b \in B_u} \mathbb{1} [u \in U_{10}(b)]$$
-
-  $B_u$ is the set of beers rated by user $u$.
-
-  $U_{10}(b)$ is the set of at most 10 users that first rated the beer $b$.
-  
-</details>
-
 <br>
 
-## <a id="section_4">Intersectional Analysis</a>
-### **Intersectional Analysis: Where Gender and Character Type Converge**
-The stage is set for a detailed exploration of character dynamics as we unfold the intricacies of four key combinations: Male-Main, Male-Side, Female-Main, and Female-Side. Each combination tells a unique story, revealing the dynamics that underpin the interactions between characters of different genders and roles.
-
-1. Male-Main Characters:
-🎭 Behind the Masculine Lens
-
-How many male main characters grace the cinematic canvas? Unveil the personas that embody the essence of the narrative.
-Dive into the interactions between male main characters. Are they bound by shared pursuits, rivalries, or collaborations? Explore the emotional landscapes that unfold within this dynamic group.
-2. Male-Side Characters:
-🎬 Supporting Roles in Focus
-
-Shine the spotlight on male side characters as they add depth and complexity to the narrative. How do their roles influence the overarching story?
-Analyze the interactions between male side characters and other character types. Are they amplifying the journeys of the main characters or crafting unique subplots?
-3. Female-Main Characters:
-🌟 Leading Ladies in Action
-
-Illuminate the screen with the presence of female main characters. What personas define their roles, and how do they shape the narrative arc?
-Delve into the interactions between female main characters. Are their connections characterized by solidarity, competition, or a blend of both? Uncover the emotional layers that unfold within this ensemble.
-4. Female-Side Characters:
-🌈 Side Characters Stepping Forward
-
-Acknowledge the roles played by female side characters, often the unsung heroes of the cinematic narrative. How do they contribute to the richness of the story?
-Investigate the interactions between female side characters and other character types. Do they forge unique bonds or add intricate layers to the relationships within the narrative?
-📊 Quantifying the Ensemble:
-Before the characters take their places on the stage, let's quantify the ensemble. How many characters fall into each category? Are there notable trends or imbalances that catch the eye?
-
-🌐 Temporal Evolution and Genre Dimensions: As we traverse through time and explore various genres, how have the numbers and interactions within each character category evolved? Does the cinematic landscape reflect changing societal norms and storytelling conventions?
-
-As we unveil the personas and interactions within each character combination, a vivid narrative unfolds, shedding light on the intricate dance of characters within the intersectional realms of gender and roles. 🎥 Join us as we unravel the stories woven into Male-Main, Male-Side, Female-Main, and Female-Side character dynamics, where each combination contributes to the symphony of cinematic storytelling! 🍿🎶
-<details>
-  <summary>Show more</summary>
-  
-  A user $u$ is an adventurer if he/she often enough risks trying out beers that have a bad rating at the time at which they rate them (less than 3.25/5, knowing that the average is at $\approx$ 3.97/5). The corresponding score is the following:
-
-  $$ADV_u = \sum_{b \in B_u} \mathbb{1} [\overline{r}_{u,b}(t_{u,b}) < T]$$
-
-  $B_u$ is the set of beers rated by user $u$.
-
-  Rating $\overline{r}_b(t_{u,b})$ is the average rating of beer $b$ at the time $t_{u,b}$ at which user $u$ rates beer $b$.
-
-  $T=3.25$ is a cut-off determined empirically based on the data.
-</details>
-
-<br>
-
-
-## <a id="section_takeaway">Takwaway</a>
-
+## <a id="section_4">Takeaway</a>
