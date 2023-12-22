@@ -8,18 +8,12 @@ In the grand tradition of narrative storytelling, characters serve as the beatin
 
 Why is understanding character dynamics so crucial? Well, as storytelling enthusiasts, filmmakers, and data enthusiasts alike, we believe that unraveling the patterns of character interactions unveils the very essence of cinematic storytelling. Characters are not mere entities; they are conduits through which narratives breathe, conveying emotions, conflicts, and resolutions.
 
-Academic Touchpoint: 🎓 As echoed by film theorist André Bazin, "A film is a petrified fountain of thought." Our journey aligns with this sentiment, aiming to unlock the flow of narrative thought embedded in character interactions.
+Academic Touchpoint: 🎓 As echoed by Jean Cocteau, "A film is a petrified fountain of thought." Our journey aligns with this sentiment, aiming to unlock the flow of narrative thought embedded in character interactions.
 
 Buckle up as we embark on an odyssey through the realms of persona distributions, intricate character networks, and the pulsating rhythm of cinematic evolution! 🚀 Are you ready to peer into the soul of cinema and witness the magic that unfolds when characters take center stage? Let the curtain rise, and let the data story begin! 🌟
 
 <i><sup>1</sup>natural soft-clustering: this approach is "cluster together users that satisfy a human-interpretable condition" （for modification </i>
 
-## <a id="section_dataset">Dataset</a>
-We use the [dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF) provided by the teaching team of "CS-401: Applied Data Analysis" at EPFL for the year 2022.
-
-## <a id="section_clustering_approach">The Approach to Soft-Clustering the Users</a>
-
-We use a score-based approach to soft-cluster users using scores that are easily interpretable to humans. All of our scores satisfy that the larger they are the more they emphasize that the user may belong to the given category.
 
 ## <a id="section_1">Understanding Individual Characters</a>
 ### **Peering into the Essence of Characters: A Journey into Personas** 
@@ -53,7 +47,6 @@ Zooming in, we explore the nuances of personas within different genres. Does the
 {% include male_genre_persona.html %}
 
 #### Character Type Personas: Main Stage vs. Side Story
-Main and Side Characters:
 
 As we shift our gaze to character types, the question arises: do main and side characters typically share similar personas, or do their behavioral archetypes diverge?
 
@@ -62,6 +55,8 @@ As we shift our gaze to character types, the question arises: do main and side c
 Does it vary over time?
 
 {% include chartype__persona_temporal.html %}
+
+From both graphs above, it seems there's no significant different in main and side characters' personas.
 
 Intersectional Insights: Gender and Character Type Convergence
 
