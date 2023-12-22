@@ -26,9 +26,12 @@ We get the personas by running the pipeline outlined in the "Learning Latent Per
    
 </details>
 
+
 We can take a look at the most associated words for each persona to get a basic impression.
 
 {% include wordcloud_persona.html %}
+
+{% include persona_dash.html %}
 
 Also, how each persona is linked to different genres:
 
