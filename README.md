@@ -30,8 +30,7 @@ We get the personas by running the pipeline outlined in the "Learning Latent Per
 We can take a look at the most associated words for each persona to get a basic impression.
 
 {% include wordcloud_persona.html %}
-
-
+<br>
 Besides, let's check the 2-d mapping of the 50 personas where closer distance means similar attributes and bigger size means more appearances in the film dataset.  It is evident that certain persona clusters are more prevalent than others, though overall, the classifications do not exhibit significant imbalance.
 
 ![Film Banner](./assets/img/dash.png.jpg "persona")
@@ -137,6 +136,13 @@ Analyzing our data reveals a pronounced bias toward heterosexual relationships, 
 
 ## <a id="section_3">Interaction Analysis by Character Type</a>
 {% include small_multiples.html %}
+
+<div class="plot-container">
+    <h3>Crime</h3>
+    <iframe>{% include crimes_main.html %}</iframe>
+    <iframe>{% include crimes_main.html %}</iframe>
+</div>
+
 ### **Interaction Analysis by Character Type: Main Characters and Side Characters Through Time and Genre**
 Lights, camera, dimensions! In this segment of our cinematic odyssey, we journey through time and traverse the diverse landscapes of genres to uncover the secrets hidden within the dynamics between main and side characters.
 
