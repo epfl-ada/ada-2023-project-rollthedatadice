@@ -26,14 +26,15 @@ We use a score-based approach to soft-cluster users using scores that are easily
 
 Welcome to the core of our cinematic exploration, where characters reveal their individuality through distinct personas. In this phase of the data story, we delve into the latent behavioral and personality patterns that define characters before they embark on their narrative journeys.
 
-What are Personas?
+#### What are Personas?
+
 In the world of movie plot summaries, personas serve as the key to understanding the potential and latent traits of characters. These personas represent behavioral archetypes, offering a glimpse into how characters might navigate the intricacies of their cinematic worlds.
 
 Interactive Persona Graphs:
 [Explore Interactive Persona Graphs]
 
-Gendered Personas: Navigating Binary Essences
-Male and Female Personas:
+#### Gendered Personas: Navigating Binary Essences
+
 Our journey begins by dissecting the personas of characters based on gender. What are the most common behavioral archetypes for male and female characters? 
 
 {% include persona_gender_percentage.html %}
@@ -46,29 +47,35 @@ Interactive Graphs:
 
 [Top Male Personas Over Time]
 [Top Female Personas Over Time]
-Genre-Specific Persona Trends:
+
 Zooming in, we explore the nuances of personas within different genres. Does the stereotypical persona of a male or female character change when the stage is set in a romance, action, or sci-fi setting?
 
 Interactive Graphs:
 
 [Male Persona Distribution Across Genres]
 [Female Persona Distribution Across Genres]
-Character Type Personas: Main Stage vs. Side Story
+
+#### Character Type Personas: Main Stage vs. Side Story
 Main and Side Characters:
+
 As we shift our gaze to character types, the question arises: do main and side characters typically share similar personas, or do their behavioral archetypes diverge?
 
 Interactive Graphs:
 
 [Main Character Persona Distribution]
 [Side Character Persona Distribution]
+
 Intersectional Insights: Gender and Character Type Convergence
+
 In the final act of this persona-driven exploration, we unravel the intersectionality of gender and character type. How do male main characters differ in persona from their female side counterparts, and vice versa?
 
 Interactive Graphs:
 
 [Male Main vs. Female Side Persona Interactions]
 [Female Main vs. Male Side Persona Interactions]
-Closing the Curtain: A Persona-Painted Prelude
+
+#### Closing the Curtain: A Persona-Painted Prelude
+
 As we draw the curtain on this first part of our data story, the personas of individual characters emerge as the backdrop, setting the stage for the intricate interactions that follow. Join us in the next act as we shift our focus from individual character nuances to the dynamic dance of personas in the realm of character interactions.
 
 
