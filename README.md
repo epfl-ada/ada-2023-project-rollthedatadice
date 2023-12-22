@@ -17,7 +17,7 @@ This is the beginning of our cinematic exploration, where characters reveal thei
 
 #### What are Personas?
 
-In the realm of film, personas encapsulate a blend of distinctive traits by which the fictional characters are shaped. The audience would often identify what a character is like by their persona, for example, the hero or the villain. In our cases, personas can be in more specific. terms, like characters' behavioral and personality petterns. After regression analysis, we classified all the characters into 50 types of personas, indicated by a code from 0 to 49.In the realm of film, personas encapsulate a blend of distinctive multifaceted traits by which the fictional characters are shaped. The audience would often use the persona to effectively identify what a character is like, for example, the hero or the villain. In our cases, personas can be more specific. After regression analysis, we classified all the characters into 50 types of personas, indicated by a code from 0 to 49.
+In the realm of film, personas encapsulate a blend of distinctive traits by which the fictional characters are shaped. The audience would often identify what a character is like by their persona, for example, the hero or the villain. In our cases, personas can be in more specific terms, like characters' behavioral and personality petterns. After regression, we classified all the characters into 50 types of personas, indicated by a code from 0 to 49.In films, personas encapsulate a blend of distinctive multifaceted traits by which the fictional characters are shaped. The audience would often use the persona to effectively identify what a character is like, for example, the hero or the villain. In our cases, personas can be more specific. After regression analysis, we classified all the characters into 50 types of personas, indicated by a code from 0 to 49.
 
 <details>
   <summary>Show more</summary>
@@ -31,9 +31,18 @@ We can take a look at the most associated words for each persona to get a basic 
 
 {% include wordcloud_persona.html %}
 
+
+Besides, let's check the 2-d mapping of the 50 personas where closer distance means similar attributes and bigger size means more appearances in the film dataset.  It is evident that certain persona clusters are more prevalent than others, though overall, the classifications do not exhibit significant imbalance.
+
 ![Film Banner](./assets/img/dash.png.jpg "persona")
 
-Due to some technical issues, we are not able to display the graph in an interactive way. On the left side is the 2-d mapping of the 50 personas. Closer distance means they have similar attributes. Bigger size means they appear more in the film dataset. On the right side we have the word frequency within each persona type. Here we take the screenshot of persona 47, the most common personas for male characters in our dataset.    
+<details>
+  <summary>Show more</summary>
+  
+Due to some technical issues, we are not able to display the graph in an interactive way. On the left side is the 2-d mapping of the 50 personas. Closer distance means they have similar attributes. Bigger size means they appear more in the film dataset. On the right side we have the word frequency within each persona type. Here we take the screenshot of persona 47, the most common personas for male characters in our dataset.
+   
+</details>
+<br>    
 
 
 Also, how each persona (of both gender) is distributed among different genres:
@@ -148,3 +157,11 @@ As we embark on this multidimensional exploration, the narrative unfolds, weavin
 <br>
 
 ## <a id="section_4">Takeaway</a>
+🔍 **Persona Insights**
+Our exploration into character personas revealed a diverse range of behavioral patterns. Different genders showed varying distributions of personas, while main and side characters exhibited similar patterns.
+
+🎭 **Gendered Dynamics**
+Analyzing interactions between characters brought out nuanced patterns. Male-male and female-female interactions displayed unique dynamics. The intersection of gender and character type added complexity. We found distinct interaction patterns across genders and within the same gender.
+
+🚧 **Limitations**
+Interpreting character personas was challenging, as associating words with precise labels proved elusive. This led to a level of ambiguity in understanding the personas' real-world implications.
