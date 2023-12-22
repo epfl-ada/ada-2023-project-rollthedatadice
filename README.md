@@ -57,19 +57,16 @@ Main and Side Characters:
 
 As we shift our gaze to character types, the question arises: do main and side characters typically share similar personas, or do their behavioral archetypes diverge?
 
-Interactive Graphs:
+{% include chartype__persona.html %}
 
-[Main Character Persona Distribution]
-[Side Character Persona Distribution]
+Does it vary over time?
+
+{% include chartype__persona_temporal.html %}
 
 Intersectional Insights: Gender and Character Type Convergence
 
 In the final act of this persona-driven exploration, we unravel the intersectionality of gender and character type. How do male main characters differ in persona from their female side counterparts, and vice versa?
 
-Interactive Graphs:
-
-[Male Main vs. Female Side Persona Interactions]
-[Female Main vs. Male Side Persona Interactions]
 
 #### Closing the Curtain: A Persona-Painted Prelude
 
