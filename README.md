@@ -26,6 +26,12 @@ talk about how we got the persona by running the pipeline
    
 </details>
 
+We can take a look at the most associated words for each persona to get a basic impression.
+
+{% include wordcloud_persona.html %}
+
+Also, how each persona is linked to different genres:
+
 {% include persona_genre_mapping.html %}
 
 As we can see, persona 10 appears more in Romantic Comedy, Romance Film, Drama and Comedy; while persona 47 is more often seen in Thriller, Drama, Crime Fiction, Action.
