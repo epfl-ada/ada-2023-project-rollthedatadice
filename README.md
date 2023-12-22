@@ -1,7 +1,6 @@
 
-![Beer Banner](./assets/img/banner.webp "film banner")
+![Film Banner](./assets/img/banner.webp "film banner")
 
-## <a id="section_intro">Introduction</a>
 Welcome to the captivating world where stories unfold, emotions intertwine, and characters come to life on the silver screen! Our project sets out on a riveting journey through the heart of cinema, seeking to decode the intricate dance of characters within the vast tapestry of movie plot summaries.
 
 In the grand tradition of narrative storytelling, characters serve as the beating heart of every cinematic masterpiece. Beyond their individual narratives, the dynamics between characters shape the essence of storytelling, steering plots towards climactic peaks, heartwarming resolutions, or tragic conclusions.
