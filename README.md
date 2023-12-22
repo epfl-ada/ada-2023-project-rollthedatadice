@@ -131,6 +131,8 @@ Trace the evolution of these relationships across different eras. How have on-sc
 #### The Dance of Opposites: Male-Female Duets
 💑 Romance, Conflict, or Both:
 Witness the dance between male and female protagonists, where the sparks of romance, the fires of conflict, or a delicate balance of both come to life. The male-female duets are a captivating exploration of love, tension, and everything in between.
+{% include female_behavior.html %}
+{% include male_behavior.html %}
 
 🔍 Genre-Specific Intricacies:
 Zoom into different genres to unravel how the dynamics of male-female interactions vary. Is the romance in a comedy different from that in a drama?
