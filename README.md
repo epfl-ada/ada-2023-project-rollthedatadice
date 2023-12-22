@@ -96,10 +96,16 @@ As we draw the curtain on this first part of our data story, the personas of ind
 Having delved into the individual personas that shape the characters, we now turn our gaze towards the dynamic partnerships and interactions that unfold on the silver screen. In this chapter, we explore how the distinctive personas we unveiled in the previous act come to life in the intricate dance of gendered character interactions.
 
 🌐 Mapping the Cinematic Web:
-To unravel the secrets of character interactions, we harness the power of movie networks. Each film's plot summary transforms into a complex tapestry of relationships, woven into a network graph. Characters become nodes, and their interactions form the connecting threads. This network allows us to visualize the intricate dynamics between characters, offering a unique lens through which we decode the gendered symphony of cinematic storytelling.
+To unravel the secrets of character interactions, we build the movie networks. Each film's plot summary transforms into a complex tapestry of relationships, woven into a network graph. Characters become nodes, and their interactions form the connecting threads. This network allows us to visualize the intricate dynamics between characters, offering a unique lens through which we decode the gendered symphony of cinematic storytelling. Here we show an example.
 
 {% include hunger_games_network.html %}
 
+<details>
+  <summary>Show more</summary>
+  
+We use SpaCy to get the NER tags in each sentence. Then we parse each sentence to get the get Subject-Verb-Object (SVO) triples. We use only keep the triples whose subject is a character and the object is also a character. We then use the subject and object as the nodes and the verb as the edge.
+
+</details>
 🌟 Unveiling the Gender Dynamics:
 Picture this – a tapestry of character interactions where male and female protagonists engage in a harmonious ballet of emotions. Our analysis has unraveled the most common interactions between characters of the same gender. Do they share tender moments of camaraderie or clash in the tempest of conflicts?
 
