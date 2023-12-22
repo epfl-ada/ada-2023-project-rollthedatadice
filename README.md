@@ -17,7 +17,7 @@ This is the beginning of our cinematic exploration, where characters reveal thei
 
 #### What are Personas?
 
-In movie plot summaries, personas serve as the key to understanding the potential and latent traits of characters. These personas represent behavioral archetypes, offering a glimpse into how characters might navigate the intricacies of their cinematic worlds.
+In the realm of film, personas encapsulate a blend of distinctive traits by which the fictional characters are shaped. The audience would often identify what a character is like by their persona, for example, the hero or the villain. In our cases, personas can be in more specific. terms, like characters' behavioral and personality petterns. After regression analysis, we classified all the characters into 50 types of personas, indicated by a code from 0 to 49.In the realm of film, personas encapsulate a blend of distinctive multifaceted traits by which the fictional characters are shaped. The audience would often use the persona to effectively identify what a character is like, for example, the hero or the villain. In our cases, personas can be more specific. After regression analysis, we classified all the characters into 50 types of personas, indicated by a code from 0 to 49.
 
 <details>
   <summary>Show more</summary>
@@ -49,13 +49,13 @@ Actually we don't really have gender information about the characters. We could 
 
 {% include gender_persona_percentage.html %}
 
-We can see from the graph, the top 2 personas, 10 and 47, present a great gender discrepancy.
+We can see from the graph, persona 10 and persona 47, which are the top 2 personas, both show great gender discrepancy. (bear in mind that there are actually way more male characters than female characters). Proportionally, just like persona 10, persona 0, 23, 33, 43 all have much more female than male. By contrast, more male are found in persona 3, 5, 40, as in persona 47.
 
 As the cinematic timeline unfolds, do we witness an evolution in these archetypes, reflecting changing societal norms?
 
 {% include persona_gender_temporal.html %}
 
-What can we learn from the graph? 【to be added】
+When temporal factor are also taken into account, it's obvious that male characters and female characters have quite different evolving patterns over time.
 
 Zooming in, we explore the nuances of personas within different genres. Does the stereotypical persona of a male or female character change when the stage is set in a romance, action, or sci-fi setting?
 
@@ -68,11 +68,13 @@ As we shift our gaze to character types, the question arises: do main and side c
 
 {% include chartype__persona.html %}
 
-Does it vary over time?
+Unlike the gender bias, with most personas, main characters and side characters are quite similar.
+
+Then, does it vary over time?
 
 {% include chartype__persona_temporal.html %}
 
-From both graphs above, it seems there's no significant difference in main and side characters' personas.
+Again, from both graphs above, it seems there's no obviously giant difference in main and side characters' personas in terms of their types and trends.
 
 <details>
   <summary>Show more</summary>
