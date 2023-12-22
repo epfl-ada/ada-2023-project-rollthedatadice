@@ -106,12 +106,18 @@ To unravel the secrets of character interactions, we build the movie networks. E
 
 <details>
   <summary>Show more</summary>
-  
 We use SpaCy to get the NER tags in each sentence. Then we parse each sentence to get the get Subject-Verb-Object (SVO) triples. We use only keep the triples whose subject is a character and the object is also a character. We then use the subject and object as the nodes and the verb as the edge.
-
 </details>
+
 🌟 Unveiling the Gender Dynamics:
-Picture this – a tapestry of character interactions where male and female protagonists engage in a harmonious ballet of emotions. Our analysis has unraveled the most common interactions between characters of the same gender. Do they share tender moments of camaraderie or clash in the tempest of conflicts?
+Picture this – a tapestry of character interactions where male and female protagonists engage in a harmonious ballet of emotions. Our analysis has unraveled the most common interactions between characters of the same gender. Do they share tender moments of camaraderie or clash in the tempest of conflicts? Let's see the results we observed from our character interaction dynamics. Here we go one step further by mapping the "verb" interaction to some more general relationships.
+<details>
+  <summary>Show more</summary>
+We manually define some most common interactions, including love, fight, reject, fear, care, etc. We get the word embedding for these words, and pick 50 most related words in the semantic space. Then we map the "verb" edges to these more general words. In this way, we can get as much relationship clusters as what we want.
+</details>
+
+{% include female_behavior.html %}
+{% include male_behavior.html %}
 
 #### The Male-Male Tapestry: Bonds Beyond Brotherhood
 👬 Brotherhood and Beyond:
