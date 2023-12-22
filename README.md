@@ -24,22 +24,40 @@ Welcome to the beginning of our cinematic exploration, where characters reveal t
 
 In the world of movie plot summaries, personas serve as the key to understanding the potential and latent traits of characters. These personas represent behavioral archetypes, offering a glimpse into how characters might navigate the intricacies of their cinematic worlds.
 
+<details>
+  <summary>Show more</summary>
+  
+talk about how we got the persona by running the pipeline
+   
+</details>
+
 {% include persona_genre_mapping.html %}
 
-Interactive Persona Graphs:
-[Explore Interactive Persona Graphs]
+As we can see, persona 10 appears more in Romantic Comedy, Romance Film, Drama and Comedy; while persona 47 is more often seen in Thriller, Drama, Crime Fiction, Action.
 
 #### Gendered Personas: Navigating Binary Essences
 
 Our journey begins by dissecting the personas of characters based on gender. What are the most common behavioral archetypes for male and female characters? 
 
-{% include persona_gender_percentage.html %}
+<details>
+  <summary>Show more</summary>
+  
+Actually we don't really have gender information about the characters. We could only use the corresponding actor's gender instead, which might bring trivial error.
+   
+</details>
+
+{% include persona_genre_mapping.html %}
+
+
+{% include gender_persona_percentage.html %}
 
 We can see from the graph, the top 2 personas, 10 and 47, present a great gender discrepancy.
 
 As the cinematic timeline unfolds, do we witness an evolution in these archetypes, reflecting changing societal norms?
 
 {% include persona_gender_temporal.html %}
+
+What can we learn from the graph? 【to be added】
 
 Zooming in, we explore the nuances of personas within different genres. Does the stereotypical persona of a male or female character change when the stage is set in a romance, action, or sci-fi setting?
 
@@ -65,33 +83,11 @@ talk about whether there's a significant difference. T test?
    
 </details>
 
-Intersectional Insights: Gender and Character Type Convergence
-
-In the final act of this persona-driven exploration, we unravel the intersectionality of gender and character type. How do male main characters differ in persona from their female side counterparts, and vice versa?
-
 
 #### Closing the Curtain: A Persona-Painted Prelude
 
 As we draw the curtain on this first part of our data story, the personas of individual characters emerge as the backdrop, setting the stage for the intricate interactions that follow. Join us in the next act as we shift our focus from individual character nuances to the dynamic dance of personas in the realm of character interactions.
 
-
-
-<details>
-  <summary>Show more</summary>
-  
-  A user $u$ is a conformist if he/she has a high conformism score that measures how much the user sticks with the average opinion on the beers he/she rates. The score is defined as follows:
-
-  $$CFM_u = -\frac{1}{B_u} \sum_{b \in B_u} (\frac{r_{u,b}-\overline{r_b}}{\sigma_b})^2$$
-  
-  $B_u$ is the set of beers the user $u$ has rated.
-  
-  $r_{u,b}$ is the rating given by user $u$ to beer $b$.
-  
-  $\sigma_b$ is the standard deviation of the ratings of the beer $b$.
-
-  $\overline{r_b}$ is the average rating of beer $b$.
-   
-</details>
 
 <br>
 
