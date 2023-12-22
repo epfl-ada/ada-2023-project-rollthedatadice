@@ -1,0 +1,338 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Exports from Cytoscape</title>
+        <meta name="description" content="Single network exported from Cytoscape 3.3">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style>
+			body{
+				background:transparent;
+				font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+				color:#555;
+				font-weight:100}.browsehappy{margin:.2em 0;
+				background:transparent;color:#000;
+				padding:.2em 0
+			}
+			#cy{
+				width:800px;
+				height:600px;
+				background-color:transparent;
+			}
+		</style>
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">
+                You are using an <strong>ancient</strong> browser.
+                Please <a href="http://browsehappy.com/">upgrade your browser
+                </a> to improve your experience.
+            </p>
+        <![endif]-->
+
+        <!-- Actual Cytoscape.js Instance -->
+        <div id="cy"></div>
+        
+        <script>
+var networks = {"graph_df.csv": {
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.10.1",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "graph_df.csv",
+    "name" : "graph_df.csv",
+    "SUID" : 456690,
+    "__Annotations" : [ ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "456761",
+        "shared_name" : "Haymitch",
+        "name" : "Haymitch",
+        "SUID" : 456761,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -151.85415781483425,
+        "y" : 14.894222407331679
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456747",
+        "shared_name" : "Cato",
+        "name" : "Cato",
+        "SUID" : 456747,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 12.363843160772706,
+        "y" : -109.15262517206556
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456733",
+        "shared_name" : "Rue",
+        "name" : "Rue",
+        "SUID" : 456733,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -60.645761609204094,
+        "y" : 150.82354094068333
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456720",
+        "shared_name" : "Katniss",
+        "name" : "Katniss",
+        "SUID" : 456720,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -4.758770751953122,
+        "y" : 5.741259765625003
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456718",
+        "shared_name" : "Peeta",
+        "name" : "Peeta",
+        "SUID" : 456718,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 178.63778898278062,
+        "y" : -18.544634554177527
+      },
+      "selected" : false
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "456763",
+        "source" : "456761",
+        "target" : "456720",
+        "shared_name" : "Haymitch (interacts with) Katniss",
+        "combined_action" : "warn",
+        "shared_interaction" : "interacts with",
+        "name" : "Haymitch (interacts with) Katniss",
+        "interaction" : "interacts with",
+        "SUID" : 456763,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456735",
+        "source" : "456733",
+        "target" : "456720",
+        "shared_name" : "Rue (interacts with) Katniss",
+        "combined_action" : "call",
+        "shared_interaction" : "interacts with",
+        "name" : "Rue (interacts with) Katniss",
+        "interaction" : "interacts with",
+        "SUID" : 456735,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456755",
+        "source" : "456720",
+        "target" : "456747",
+        "shared_name" : "Katniss (interacts with) Cato",
+        "combined_action" : "shoot",
+        "shared_interaction" : "interacts with",
+        "name" : "Katniss (interacts with) Cato",
+        "interaction" : "interacts with",
+        "SUID" : 456755,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456749",
+        "source" : "456720",
+        "target" : "456747",
+        "shared_name" : "Katniss (interacts with) Cato",
+        "combined_action" : "wound",
+        "shared_interaction" : "interacts with",
+        "name" : "Katniss (interacts with) Cato",
+        "interaction" : "interacts with",
+        "SUID" : 456749,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456741",
+        "source" : "456720",
+        "target" : "456733",
+        "shared_name" : "Katniss (interacts with) Rue",
+        "combined_action" : "comfort the dying",
+        "shared_interaction" : "interacts with",
+        "name" : "Katniss (interacts with) Rue",
+        "interaction" : "interacts with",
+        "SUID" : 456741,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456738",
+        "source" : "456720",
+        "target" : "456733",
+        "shared_name" : "Katniss (interacts with) Rue",
+        "combined_action" : "find",
+        "shared_interaction" : "interacts with",
+        "name" : "Katniss (interacts with) Rue",
+        "interaction" : "interacts with",
+        "SUID" : 456738,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456730",
+        "source" : "456720",
+        "target" : "456718",
+        "shared_name" : "Katniss (interacts with) Peeta",
+        "combined_action" : "discover",
+        "shared_interaction" : "interacts with",
+        "name" : "Katniss (interacts with) Peeta",
+        "interaction" : "interacts with",
+        "SUID" : 456730,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456758",
+        "source" : "456718",
+        "target" : "456720",
+        "shared_name" : "Peeta (interacts with) Katniss",
+        "combined_action" : "tell",
+        "shared_interaction" : "interacts with",
+        "name" : "Peeta (interacts with) Katniss",
+        "interaction" : "interacts with",
+        "SUID" : 456758,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456752",
+        "source" : "456718",
+        "target" : "456747",
+        "shared_name" : "Peeta (interacts with) Cato",
+        "combined_action" : "hurl",
+        "shared_interaction" : "interacts with",
+        "name" : "Peeta (interacts with) Cato",
+        "interaction" : "interacts with",
+        "SUID" : 456752,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456744",
+        "source" : "456718",
+        "target" : "456720",
+        "shared_name" : "Peeta (interacts with) Katniss",
+        "combined_action" : "beg",
+        "shared_interaction" : "interacts with",
+        "name" : "Peeta (interacts with) Katniss",
+        "interaction" : "interacts with",
+        "SUID" : 456744,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456722",
+        "source" : "456718",
+        "target" : "456720",
+        "shared_name" : "Peeta (interacts with) Katniss",
+        "combined_action" : "reveal love for",
+        "shared_interaction" : "interacts with",
+        "name" : "Peeta (interacts with) Katniss",
+        "interaction" : "interacts with",
+        "SUID" : 456722,
+        "selected" : false
+      },
+      "selected" : false
+    } ]
+  }
+}}
+        </script>
+        <script>
+var styles = [ {
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.10.1",
+  "target_cytoscapejs_version" : "~2.1",
+  "title" : "default",
+  "style" : [ {
+    "selector" : "node",
+    "css" : {
+      "font-size" : 12,
+      "border-opacity" : 1.0,
+      "background-color" : "rgb(218,218,235)",
+      "height" : 35.0,
+      "border-width" : 0.0,
+      "text-valign" : "center",
+      "text-halign" : "center",
+      "color" : "rgb(0,0,0)",
+      "text-opacity" : 1.0,
+      "font-family" : "SansSerif.plain",
+      "font-weight" : "normal",
+      "shape" : "ellipse",
+      "width" : 75.0,
+      "background-opacity" : 1.0,
+      "border-color" : "rgb(204,204,204)",
+      "content" : "data(name)"
+    }
+  }, {
+    "selector" : "node:selected",
+    "css" : {
+      "background-color" : "rgb(255,255,0)"
+    }
+  }, {
+    "selector" : "edge",
+    "css" : {
+      "font-family" : "Dialog.plain",
+      "font-weight" : "normal",
+      "text-opacity" : 1.0,
+      "source-arrow-color" : "rgb(0,0,0)",
+      "line-style" : "dashed",
+      "font-size" : 10,
+      "opacity" : 1.0,
+      "color" : "rgb(0,0,0)",
+      "target-arrow-shape" : "none",
+      "source-arrow-shape" : "none",
+      "target-arrow-color" : "rgb(0,0,0)",
+      "width" : 2.0,
+      "line-color" : "rgb(132,132,132)",
+      "content" : "data(combined_action)"
+    }
+  }, {
+    "selector" : "edge:selected",
+    "css" : {
+      "line-color" : "rgb(255,0,0)"
+    }
+  } ]
+} ]
+
+        </script>
+
+        <script src="scripts/vendor_hunger_game.js"></script>
+        <script src="scripts/main_hunger_game.js"></script>
+        
+</body>
+</html>
