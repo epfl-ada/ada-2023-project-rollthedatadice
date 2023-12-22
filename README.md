@@ -127,6 +127,8 @@ As we peer into the kaleidoscope of gendered interactions, our data-driven journ
 ### **Interaction Analysis by Character Type: Main Characters and Side Characters Through Time and Genre**
 Lights, camera, dimensions! In this segment of our cinematic odyssey, we journey through time and traverse the diverse landscapes of genres to uncover the secrets hidden within the dynamics between main and side characters.
 
+{% include hunger_games_network.html %}
+
 🌟 Main-Main Connections:
 As we step across cinematic eras, observe how the interactions between main characters have evolved over time. Do the romantic dialogues of yesteryear differ from the action-packed exchanges of the modern era? Time, it seems, leaves an indelible mark on the relationships between protagonists.
 
