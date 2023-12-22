@@ -1,51 +1,11 @@
-import pandas as pd
-import numpy as np
-from urllib.parse import urlparse
 import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 import pandas as pd
 import math
+import re
 import spacy
 from spacy.tokens import Token
-from spacy import displacy
-
-from wikidataintegrator.wdi_core import WDItemEngine
-
-def convert_freebase_id_to_entity(freebase_id):
-    # if freebase_id is NaN，return NaN
-    if pd.isnull(freebase_id):
-        return np.nan
-
-    # Define query
-    sparql_query = f"""
-    SELECT
-        ?article
-    WHERE 
-    {{
-        ?article schema:about ?item;
-        schema:isPartOf <https://en.wikipedia.org/> .
-        ?item wdt:P646 "{freebase_id}";
-    }}
-    """
-
-    # Send the query request to WDQB
-    results = WDItemEngine.execute_sparql_query(sparql_query)
-    # If you query the result , return the entity name; 
-    # otherwise the original freeBase ID will be returned
-    if results['results']['bindings']:
-        url = results['results']['bindings'][0]['article']['value']
-
-        # Use urlparse to parse URL
-        parsed_url = urlparse(url)
-
-        # Extract the name
-        article_name = parsed_url.path.split('/')[-1]
-
-        return article_name
-    else:
-        return freebase_id
-
 
 # function that given a personn returns the sentences where the person is cited
 def get_sentences_with_person(person, doc):
@@ -83,37 +43,93 @@ def replace_pronouns(doc, charSex, characters):
     theyStack = []
     neutralStack = []
     for sentence in doc.sents:
-        for token in sentence:
+        for i, token in enumerate(sentence):
             #detect personns and add them to the correct stack
-            if token.text in characters :
-                if token.nbor(1).pos_=="CCONJ":
+            # Check if token.text is in characters
+            if token.text in characters:
+                if (i < len(sentence) - 3) and token.nbor(1).pos_ == "CCONJ":
                     if token.nbor(2).pos_ == "PROPN":
                         theyStack.append([token.text, token.nbor(2).text])
                         neutralStack.append([token.text, token.nbor(2).text])
                     elif token.nbor(3).pos_ == "PROPN":
                         theyStack.append([token.text, token.nbor(3).text])
                         neutralStack.append([token.text, token.nbor(3).text])
-                elif any(charSex.index.str.contains(token.text)):
-                    sex=charSex.loc[charSex.index.str.contains(token.text)]["actor_gender"].values[0]
-                    if sex=="F":
-                        sheStack.append(token.text)
-                        neutralStack.append(token.text)
-                    elif sex=="M":
-                        heStack.append(token.text)
-                        neutralStack.append(token.text)
+                else:
+                    # Check if token.text is in charSex.index without NaN values
+                    matching_rows = charSex.loc[~charSex['Actor gender'].isna() & charSex.index.str.contains(re.escape(token.text), na=False)]
+                    if not matching_rows.empty:
+                        sex = matching_rows["Actor gender"].values[0]
+                        if sex == "F":
+                            sheStack.append(token.text)
+                            neutralStack.append(token.text)
+                        elif sex == "M":
+                            heStack.append(token.text)
+                            neutralStack.append(token.text)
                     else:
                         neutralStack.append(token.text)
+
             #replace pronouns
             if token.pos_ == "PRON":
                 if token.text.lower() in ["he", "him", "his"] and (len(heStack) > 0):
-                    token._.set("ref", [heStack[-1]])
+                    if token.dep_=="poss":
+                        token._.set("ref", [heStack[-1]]+["'s"])
+                    else:
+                        token._.set("ref", [heStack[-1]])
                 elif token.text.lower() in ["she", "her", "hers"] and (len(sheStack) > 0):
-                    token._.set("ref", [sheStack[-1]])
+                    if token.dep_=="poss":
+                        token._.set("ref", [sheStack[-1]]+["'s"])
+                    else:
+                        token._.set("ref", [sheStack[-1]])
                 elif token.text.lower() in ["they", "them", "their", "theirs"] and (len(theyStack) > 0):
-                    token._.set("ref", theyStack[-1])
+                    if token.dep_=="poss":
+                        token._.set("ref", theyStack[-1]+["'s"])
+                    else:
+                        token._.set("ref", theyStack[-1])
                 elif token.text.lower() in ["who"] and (len(neutralStack) > 0):
-                    token._.set("ref", [neutralStack[-1]])
+                    if token.dep_=="poss":
+                        token._.set("ref", [neutralStack[-1]]+["'s"])
+                    else:
+                        token._.set("ref", [neutralStack[-1]])
     return doc
+
+def get_all_children(token):
+    children = [token]
+    for child in token.children:
+        children.extend(get_all_children(child))
+    children=sorted(children, key=lambda x: x.i)
+    return children
+
+# Function to replace tokens with their references
+def replace_tokens_with_refs(tokens):
+    if not isinstance(tokens, list):
+        return tokens
+    updated_tokens = []
+    for token in tokens:
+        if token.pos_ == "PRON" and hasattr(token._, 'ref') and token._.ref is not None:
+            updated_tokens.extend(token._.ref)
+        else:
+            updated_tokens.append(token.text)
+    return updated_tokens
+
+
+def remove_stopwords(tokens_or_strings):
+    if isinstance(tokens_or_strings, list):
+        # If it's a list, check if elements are spaCy tokens or strings
+        cleaned_list = []
+        for item in tokens_or_strings:
+            if isinstance(item, spacy.tokens.Token):
+                # If it's a spaCy token, filter out stop words
+                cleaned_list.append(item.text) if not (item.is_stop or item.is_punct) else None
+            elif isinstance(item, str):
+                # If it's a string, convert to spaCy tokens and filter out stop words
+                tokens = nlp(item)
+                cleaned_list.extend([token.text for token in tokens if not (token.is_stop or token.is_punct)])
+            else:
+                return None
+        return cleaned_list if len(cleaned_list) > 0 else None
+    else:
+        return None
+
 
 #function that extracts the adjectives that describe a given character
 def get_adjectives_for_character(character, doc):
