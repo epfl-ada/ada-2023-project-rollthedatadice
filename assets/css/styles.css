@@ -6,19 +6,26 @@ body {
   padding-right: 5vw;
   padding-top: 20px;
   padding-bottom: 40px;
-  font: 15px/1.5 -apple-system, "Georgia", "Verdana", Roboto, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color:#595959;
   font-weight:400;
   text-align:left;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   color:#E29B0F;
   margin:0 0 20px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  color:#E29B0F;
+  margin:0 0 20px;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
+  font-family: 'Scope One', serif;
 }
 
 h1, h2, h3 {
