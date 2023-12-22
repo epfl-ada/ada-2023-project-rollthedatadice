@@ -136,6 +136,7 @@ Analyzing our data reveals a pronounced bias toward heterosexual relationships, 
 <br>
 
 ## <a id="section_3">Interaction Analysis by Character Type</a>
+{% include small_multiples.html %}
 ### **Interaction Analysis by Character Type: Main Characters and Side Characters Through Time and Genre**
 Lights, camera, dimensions! In this segment of our cinematic odyssey, we journey through time and traverse the diverse landscapes of genres to uncover the secrets hidden within the dynamics between main and side characters.
 
