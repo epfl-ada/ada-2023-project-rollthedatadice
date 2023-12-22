@@ -30,6 +30,8 @@ Welcome to the beginning of our cinematic exploration, where characters reveal t
 
 In the world of movie plot summaries, personas serve as the key to understanding the potential and latent traits of characters. These personas represent behavioral archetypes, offering a glimpse into how characters might navigate the intricacies of their cinematic worlds.
 
+{% include persona_genre_mapping.html %}
+
 Interactive Persona Graphs:
 [Explore Interactive Persona Graphs]
 
@@ -47,10 +49,8 @@ As the cinematic timeline unfolds, do we witness an evolution in these archetype
 
 Zooming in, we explore the nuances of personas within different genres. Does the stereotypical persona of a male or female character change when the stage is set in a romance, action, or sci-fi setting?
 
-Interactive Graphs:
-
-[Male Persona Distribution Across Genres]
-[Female Persona Distribution Across Genres]
+{% include female_genre_persona.html %}
+{% include male_genre_persona.html %}
 
 #### Character Type Personas: Main Stage vs. Side Story
 Main and Side Characters:
