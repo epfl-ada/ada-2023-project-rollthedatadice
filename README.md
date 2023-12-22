@@ -1,5 +1,9 @@
 # Unveiling Character Dynamics: A Quantitative Exploration of Movie Narratives
 Let's RollTheDataDice!
+See our website here:  https://epfl-ada.github.io/ada-2023-project-rollthedatadice/
+The overall workflow notebook is in `data_analysis.ipynb`
+
+
 ## Table of Contents
 - [Structure of this repository](#structure-of-this-repository)
 - [Abstract](#abstract)
@@ -9,25 +13,8 @@ Let's RollTheDataDice!
 - [Schedule](#timeline)
 - [Team Collaboration](#team-collaboration)
 
-## Structure of this repository
-```
-+---data                               # Used to put the raw data
-|   \---corenlp_plot_summaries         # Tagged data from Stanford CoreNLP-processed summaries
-|   character.metadata.tsv
-|   movie.metadata.tsv
-|   name.clusters.txt
-|   plot_summaries.txt
 
-+---generated                          # Store the manipulated data
-|   \images
-|   \tropes                            # Crawled data from tvtropes
 
-+---src                                # All the codes
-|   milestone2.ipynb                   # Exploratory analysis
-|   helper.py                          # Helper functions
-
-\---temp                               # Temporary files
-```
 ## Abstract
 Our project aims to address the critical gap in film analysis by quantitatively investigating character dynamics based on our dataset. We focus on identifying prevalent patterns among main and side characters, dissecting gender dynamics, and possibly exploring psychoanalytic dimensions. Further, after extracting the semantic character network for each film, we endeavor to reveal recurring themes, archetypes, and behavioral patterns that construct these character networks to discern genre-specific tropes. By unraveling the intricate relationships between characters, we hope to provide insights to better understand the craft of storytelling in the ever-evolving landscape of cinema. 
 
@@ -52,9 +39,6 @@ Then, we get the semantic character network graph from each movie, in which ever
 8. What are the most prevalent interaction patterns between characters of the same gender, and how do these patterns vary across genres? Could we uncover any clues about gender politics embodied in the movies?
 9. What is the distribution of male and female characters in main/side roles across different movie genres, and are there notable disparities?
 10. Are there specific genres where the dynamics of male main/side characters significantly contrast with those of female main/side characters, and vice versa?
-11. Perhaps it could be extended to factors like age, ethnicity, and so on.
-- **Network comparison**
-12. Can we classify these networks based on their geometrical and semantic features? And what can we learn from the classification results? Would they fit into different genres, maybe? Or different narrative structures?
 
 
 ## Methodology
@@ -108,30 +92,25 @@ For our final analysis we will perform many visualizations such as bar plots, hi
 
 
 
-## Initial analysis
-We did initial EDA for our movie metadata and character metadata to understand in which decades the films were made, the genre distribution, country of origin, movie language, character age, height, and so on. The explorary analysis helps us understand the dataset and provides ideas about future analysis aspects.
-
-See [milestone2.ipynb](./milestone2.ipynb) for more details.
-
 ## Timeline
 | Time         | Task                   | Status  |
 |--------------|----------------------- |---------|
 | 17, Nov      | EDA, Proposal writing  |✅       |
-| 24, Nov      | Run the persona pipeline, qualitative label, network pipeline    |         |
-| 31, Nov      | Main & side characters     |         |
-| 7, Dec       | Analysis of character interactions & gender dynamics     |         |
-| 14, Dec      | Network comparision & Final data visualizations      |         |
-| 21, Dec      | Finalize the story     |         |
+| 24, Nov      | Run the persona pipeline, qualitative label, network pipeline    | ✅        |
+| 31, Nov      | Main & side characters     | ✅        |
+| 7, Dec       | Analysis of character interactions & gender dynamics     | ✅        |
+| 14, Dec      | Network comparision & Final data visualizations      |   ✅      |
+| 21, Dec      | Finalize the story     |   ✅      |
 
 ## Team organization
 
 | Member       | Tasks                 |
 |--------------|-----------------------|
-| Mehdi        | Build the network & adjective extraction      |
-| Yanzi        | Character dynamics         |
-| Jiaming      | Gender dynamics    |
-| David        | Main & side characters   |
-| Ke           | Network comparison     |
+| Mehdi        | Build the network & adjective extraction & SVO interaction creation     |
+| Yanzi        | Character dynamics, pipeline running, persona mapping         |
+| Jiaming      | Gender dynamics, personal analysis, website    |
+| David        | Main & side characters, clustering on interactions   |
+| Ke           | Coref-resolution, website, LDAs     |
 
 
 
