@@ -162,3 +162,6 @@ Our exploration into character personas revealed a diverse range of behavioral p
 
 🎭 **Gendered Dynamics**
 Analyzing interactions between characters brought out nuanced patterns. Male-male and female-female interactions displayed unique dynamics. The intersection of gender and character type added complexity. We found distinct interaction patterns across genders and within the same gender.
+
+🚧 **Limitations**
+Interpreting character personas was challenging, as associating words with precise labels proved elusive. This led to a level of ambiguity in understanding the personas' real-world implications.
