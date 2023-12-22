@@ -135,30 +135,23 @@ Analyzing our data reveals a pronounced bias toward heterosexual relationships, 
 <br>
 
 ## <a id="section_3">Interaction Analysis by Character Type</a>
-
-<div class="plot-container">
-    <h3>Crime</h3>
-    <iframe>{% include crime_main.html %}</iframe>
-    <iframe>{% include crime_main.html %}</iframe>
-</div>
-
 ### **Interaction Analysis by Character Type: Main Characters and Side Characters Through Time and Genre**
-Lights, camera, dimensions! In this segment of our cinematic odyssey, we journey through time and traverse the diverse landscapes of genres to uncover the secrets hidden within the dynamics between main and side characters.
+Lights, camera, dimensions! In this segment of our cinematic odyssey, we traverse the diverse landscapes of genres to uncover the secrets hidden within the dynamics between main and side characters.
 
-🌟 Main-Main Connections:
-As we step across cinematic eras, observe how the interactions between main characters have evolved over time. Do the romantic dialogues of yesteryear differ from the action-packed exchanges of the modern era? Time, it seems, leaves an indelible mark on the relationships between protagonists.
+As we step across cinematic eras, observe how the interactions between main characters have evolved over time. Do the romantic dialogues of yesteryear differ from the action-packed exchanges of the modern era? Also, let's journey through genres, where the roles of side characters unfold against distinct backdrops. Are the side-side bonds of a classic film noir different from those in a contemporary romantic comedy? Immerse yourself in the genre-specific nuances that shape the interactions between supporting characters. Do these interactions adapt to the storytelling conventions of film noir, comedy, or science fiction? 
 
-Academic Glimpse: 🎓 Channeling the insights of film historian David Bordwell, we contemplate the impact of changing film techniques and narrative structures on the dynamics between main characters across different cinematic periods.
 
-👥 Side-Side Bonds:
-Now, let's journey through genres, where the roles of side characters unfold against distinct backdrops. Are the side-side bonds of a classic film noir different from those in a contemporary romantic comedy? Immerse yourself in the genre-specific nuances that shape the interactions between supporting characters.
+{% include crime_main.html %}
+{% include crime_side.html %}
 
-🌐 Main-Side Interactions:
-Venture through time and genres as we unravel the intricate dance between main and side characters. Do these interactions adapt to the storytelling conventions of film noir, comedy, or science fiction? The evolution of character dynamics becomes even more pronounced as we navigate through both temporal and genre dimensions.
+{% include Romantic comedy_main.html %}
+{% include Romantic comedy_side.html %}
 
-📈 Temporal Evolution and Genre Extravaganza: Beyond mere exploration, let's synchronize the ticking of the clock with the beats of different genres. How have the interactions between main and side characters changed over time within specific genres? Do certain genres dictate unique character dynamics that transcend temporal boundaries?
 
-As we embark on this multidimensional exploration, the narrative unfolds, weaving together the threads of time and genre into a rich tapestry of character dynamics. 🌌 Join us on this immersive journey through cinematic eras and genre landscapes, where characters, both main and side, play their roles in the ever-evolving story of the silver screen! 🎭🍿
+Examining the interaction patterns within Crime movies, it becomes evident that intense conflicts are prevalent, as one would anticipate in this genre. Interestingly, there's a noteworthy trend where main characters often assume mentoring roles and engage in collaboration with side characters.
+
+Contrastingly, when delving into Romance movies, the primary theme revolves around love. However, a nuanced observation reveals a unique dynamic—side characters frequently serve as obstacles to the main characters. The interactions between side and main characters tend to be characterized by conflict, while side characters establish collaborative connections among themselves.
+
 
 <br>
 
