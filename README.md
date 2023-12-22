@@ -135,12 +135,11 @@ Analyzing our data reveals a pronounced bias toward heterosexual relationships, 
 <br>
 
 ## <a id="section_3">Interaction Analysis by Character Type</a>
-{% include small_multiples.html %}
 
 <div class="plot-container">
     <h3>Crime</h3>
-    <iframe>{% include crimes_main.html %}</iframe>
-    <iframe>{% include crimes_main.html %}</iframe>
+    <iframe>{% include crime_main.html %}</iframe>
+    <iframe>{% include crime_main.html %}</iframe>
 </div>
 
 ### **Interaction Analysis by Character Type: Main Characters and Side Characters Through Time and Genre**
